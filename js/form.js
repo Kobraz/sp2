@@ -4,7 +4,7 @@ form.querySelector(".add-media").addEventListener("click", () => {
   const input = document.createElement("input");
   input.name = "media";
   input.type = "url";
-  form.append(input);
+  form.querySelector(".media").append(input);
 });
 
 form.addEventListener("submit", (event) => {
