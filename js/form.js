@@ -5,5 +5,5 @@ form.addEventListener("submit", (event) => {
 
   const formData = new FormData(event.target);
   const media = formData.getAll("media");
-  document.querySelector("pre").textContent = media;
+  document.querySelector("pre").textContent = JSON.stringify(media, null, 2);
 });
