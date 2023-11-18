@@ -18,6 +18,11 @@ form.addEventListener("submit", function (e) {
 
   // console.log(payload);
 
+  console.log('Payload:', payload);
+console.log('Headers:', {
+ "Content-Type": "application/json",
+});
+
   fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
  method: "POST",
  headers: {
