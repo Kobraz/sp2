@@ -1,30 +1,25 @@
-//debug this code?
+async function login(event) {
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
-fetch(`https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=${password}`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    email: email,
-    password: password,
-  }),
-})
-  .then((res) => {
-    if (res.ok) {
-      return res.json();
-    } else {
-      throw new Error("Failed to fetch data from API.rfh");
+  try {
+    const response = await fetch("https://api.noroff.dev/api/v1/auction/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch data from API");
     }
-  })
-  .then((data) => {
-    if (data.exists) {
-      console.log("Data exists:", data);
-    } else {
-      console.log("Data does not exist");
-    }
-  })
-  .catch((err) => {
-    console.log(err);
-    console.error("Error fetching data from API: ", err);
-  });
+
+    // handle the response here
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+document.getElementById("loginButton").addEventListener("click", login);
