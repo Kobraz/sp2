@@ -29,6 +29,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
       }
     })
     .then(function (data) {
+      localStorage.setItem("accessToken", data.accessToken);
       console.log(data);
     })
     .catch(function (error) {
