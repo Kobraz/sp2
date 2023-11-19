@@ -1,23 +1,19 @@
-const form = document.getElementById("form");
-
-form.addEventListener("submit", function (e) {
+document.getElementById("register-btn").addEventListener("click", function (e) {
   e.preventDefault();
-  const name = e.currentTarget[0].value;
-  const email = e.currentTarget[1].value;
-  const password = e.currentTarget[2].value;
 
-  const payload = {
-    name,
-    email,
-    password,
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var avatar = document.getElementById("avatar").value;
+
+  var payload = {
+    name: name,
+    email: email,
+    password: password,
+    avatar: avatar,
   };
 
-  console.log("Payload:", payload);
-  console.log("Headers:", {
-    "Content-Type": "application/json",
-  });
-
-  fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
+  fetch("/auction/auth/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -25,7 +21,17 @@ form.addEventListener("submit", function (e) {
     body: JSON.stringify(payload),
     referrerPolicy: "no-referrer",
   })
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+    .then(function (response) {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error("Error: " + response.statusText);
+      }
+    })
+    .then(function (data) {
+      console.log(data);
+    })
+    .catch(function (error) {
+      console.log("Request failed", error);
+    });
 });
