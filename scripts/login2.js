@@ -14,7 +14,7 @@ fetch(`https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=
     if (res.ok) {
       return res.json();
     } else {
-      throw new Error("Failed to fetch data from API");
+      throw new Error("Failed to fetch data from API.rfh");
     }
   })
   .then((data) => {
