@@ -16,15 +16,19 @@
         <form id="form" action="registerFinish.html">
           <label class="label" for="name">Name</label>
           <i class="fa-solid fa-user"></i>
-          <input id="name" name="name" type="text" placeholder="Name" />
+          <input type="text" id="name" placeholder="Name" required />
 
           <label class="label" for="email">E-mail</label>
           <i class="fa-solid fa-envelope"></i>
-          <input id="email" name="email" type="email" placeholder="E-mail" />
+          <input type="email" id="email" placeholder="Email" required />
 
           <label class="label" for="password">Password</label>
           <i class="fa-solid fa-lock"></i>
-          <input id="password" name="password" type="password" placeholder="Password" />
+          <input type="password" id="password" placeholder="Password" required />
+
+          <label class="label" for="password">Password</label>
+          <i class="fa-solid fa-user"></i>
+          <input type="file" id="avatar" placeholder="Avatar" required />
 
           <button type="submit">Submit</button>
         </form>
