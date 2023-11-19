@@ -1,4 +1,6 @@
-fetch("https://api.noroff.dev/api/v1/auction/auth/login", {
+//debug this code?
+
+fetch(`https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=${password}`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -18,8 +20,6 @@ fetch("https://api.noroff.dev/api/v1/auction/auth/login", {
   .then((data) => {
     if (data.exists) {
       console.log("Data exists:", data);
-      // You may want to set the Authorization header here,
-      // depending on your server-side implementation
     } else {
       console.log("Data does not exist");
     }
