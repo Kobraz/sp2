@@ -27,4 +27,4 @@ async function submitForm(e) {
   }
 }
 
-document.getElementById("registerForm").addEventListener("submit", submitForm);
+document.getElementById("form").addEventListener("submit", submitForm);
