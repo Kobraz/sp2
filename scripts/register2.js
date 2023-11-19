@@ -1,4 +1,4 @@
-document.getElementById("register-btn").addEventListener("click", function (e) {
+document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
 
   var name = document.getElementById("name").value;
