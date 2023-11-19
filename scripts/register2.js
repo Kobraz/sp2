@@ -29,7 +29,9 @@ document.getElementById("form").addEventListener("submit", function (e) {
       }
     })
     .then(function (data) {
-      console.log("Response: ", response);
+      let res = response;
+
+      console.log("Response: ", res);
       console.log("Response Body: ", data);
 
       localStorage.setItem("accessToken", data.accessToken);
