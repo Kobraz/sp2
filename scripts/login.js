@@ -29,7 +29,10 @@ form.addEventListener("submit", function (e) {
       localStorage.setItem("accessToken", JSON.stringify(data.accessToken));
       localStorage.setItem("name", JSON.stringify(data.name));
       localStorage.setItem("email", JSON.stringify(data.email));
-      /* window.location.href = "dashboard.html"; */
+      localStorage.setItem("avatar", JSON.stringify(data.avatar));
+      localStorage.setItem("credits", JSON.stringify(data.credits));
+
+      window.location.href = "dashboard.html";
     })
     .catch((err) => {
       console.log(err);
