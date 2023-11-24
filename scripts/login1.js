@@ -18,8 +18,6 @@ form.addEventListener("submit", function (e) {
     body: JSON.stringify(loginData),
   })
     .then((res) => {
-      /* console.log("Response status:", res.status);
-      console.log("Response data:", res.json()); */
       if (res.ok) {
         const data = res.json();
         console.log("Data", data);
@@ -31,6 +29,7 @@ form.addEventListener("submit", function (e) {
     .then((data) => {
       if (data.exists) {
         console.log("Data exists:", data);
+        localStorage.setItem("accessToken", data.accessToken);
       } else {
         console.log("Data does not exist");
       }
