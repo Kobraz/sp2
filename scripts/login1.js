@@ -22,18 +22,19 @@ form.addEventListener("submit", function (e) {
         const data = res.json();
         console.log("Data", data);
         return data;
+        localStorage.setItem("accessToken", data.accessToken);
       } else {
         throw new Error("Failed to fetchdata from API");
       }
     })
-    .then((data) => {
+    /* .then((data) => {
       if (data.exists) {
         console.log("Data exists:", data);
-        /* localStorage.setItem("accessToken", data.accessToken); */
+        localStorage.setItem("accessToken", data.accessToken);
       } else {
         console.log("Data does not exist");
       }
-    })
+    }) */
     .catch((err) => {
       console.log(err);
       console.error("Error fetching data from API: ", err);
