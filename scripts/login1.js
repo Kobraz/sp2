@@ -29,7 +29,7 @@ form.addEventListener("submit", function (e) {
     .then((data) => {
       if (data.exists) {
         console.log("Data exists:", data);
-        localStorage.setItem("accessToken", data.accessToken);
+        /* localStorage.setItem("accessToken", data.accessToken); */
       } else {
         console.log("Data does not exist");
       }
