@@ -5,15 +5,12 @@ form.addEventListener("submit", function (e) {
   const email = e.currentTarget[0].value;
   const password = e.currentTarget[1].value;
 
-  fetch(
-    `https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=${password}`,
-    {
-      method: "get",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  )
+  fetch(`https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=${password}`, {
+    method: "get",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
     .then((res) => {
       if (res.ok) {
         return res.json();
