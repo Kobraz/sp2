@@ -18,9 +18,11 @@ form.addEventListener("submit", function (e) {
     body: JSON.stringify(loginData),
   })
     .then((res) => {
-      console.log("Response status:", res.status);
-      console.log("Response data:", res.json());
+      /* console.log("Response status:", res.status);
+      console.log("Response data:", res.json()); */
       if (res.ok) {
+        const data = res.json();
+        console.log("Data", data);
         return res.json();
       } else {
         throw new Error("Failed to fetchdata from API");
