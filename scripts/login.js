@@ -19,16 +19,17 @@ form.addEventListener("submit", function (e) {
   })
     .then((res) => {
       if (res.ok) {
-        const data = res.json();
-        console.log("Data", data);
-        localStorage.setItem("accessToken", JSON.stringify(data.accessToken));
-        localStorage.setItem("name", JSON.stringify(data.name));
-        localStorage.setItem("email", JSON.stringify(data.email));
-        /* window.location.href = "dashboard.html"; */
-        return data;
+        return res.json();
       } else {
-        throw new Error("Failed to fetchdata from API");
+        throw new Error("Failed to fetch data from API");
       }
+    })
+    .then((data) => {
+      console.log("Data", data);
+      localStorage.setItem("accessToken", JSON.stringify(data.accessToken));
+      localStorage.setItem("name", JSON.stringify(data.name));
+      localStorage.setItem("email", JSON.stringify(data.email));
+      /* window.location.href = "dashboard.html"; */
     })
     .catch((err) => {
       console.log(err);
