@@ -22,7 +22,7 @@ form.addEventListener("submit", function (e) {
         const data = res.json();
         console.log("Data", data);
         localStorage.setItem("accessToken", JSON.stringify(data.accessToken));
-        window.location.href = "dashboard.html";
+        /* window.location.href = "dashboard.html"; */
         return data;
       } else {
         throw new Error("Failed to fetchdata from API");
