@@ -7,10 +7,10 @@ document.getElementById("form").addEventListener("submit", function (e) {
   var avatar = document.getElementById("avatar").value;
 
   var payload = {
-    name: name,
-    email: email,
-    password: password,
-    avatar: avatar,
+    name,
+    email,
+    password,
+    avatar,
   };
 
   console.log(payload);
