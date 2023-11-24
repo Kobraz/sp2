@@ -7,15 +7,15 @@ form.addEventListener("submit", function (e) {
 
   const loginData = {
     email: email,
-    password: password
-  }
+    password: password,
+  };
 
   fetch(`https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=${password}`, {
     method: "post",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(loginData);
+    body: JSON.stringify(loginData),
   })
     .then((res) => {
       if (res.ok) {
