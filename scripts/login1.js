@@ -18,6 +18,8 @@ form.addEventListener("submit", function (e) {
     body: JSON.stringify(loginData),
   })
     .then((res) => {
+      console.log("Response status:", res.status);
+      console.log("Response data:", res.json());
       if (res.ok) {
         return res.json();
       } else {
