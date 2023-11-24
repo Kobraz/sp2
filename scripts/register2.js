@@ -26,6 +26,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
     .then(function (response) {
       if (response.ok) {
         return response.json();
+        console.log(response);
       } else {
         throw new Error("Error: " + response.statusText);
       }
