@@ -15,27 +15,14 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
   console.log(payload);
 
-  fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
+  fetch("https://api.noroff.dev/api/v1/social/auth/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(payload),
-    /* referrerPolicy: "no-referrer", */
   })
-    .then(function (response) {
-      if (response.ok) {
-        return response.json();
-        console.log(response);
-      } else {
-        throw new Error("Error: " + response.statusText);
-      }
-    })
-    .then(function (data) {
-      localStorage.setItem("accessToken", data.accessToken);
-      console.log(data);
-    })
-    .catch(function (error) {
-      console.log("Request failed", error);
-    });
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
 });
