@@ -16,12 +16,12 @@ document.getElementById("form").addEventListener("submit", function (e) {
   console.log(payload);
 
   fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
-    method: "post",
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(payload),
-    referrerPolicy: "no-referrer",
+    /* referrerPolicy: "no-referrer", */
   })
     .then(function (response) {
       if (response.ok) {
