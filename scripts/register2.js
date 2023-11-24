@@ -15,7 +15,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
   console.log(payload);
 
-  fetch("https://api.noroff.dev/api/v1/social/auth/register", {
+  fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
