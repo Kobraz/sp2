@@ -6,7 +6,7 @@ form.addEventListener("submit", function (e) {
   const password = e.currentTarget[1].value;
 
   fetch(`https://api.noroff.dev/api/v1/auction/auth/login?email=${email}&password=${password}`, {
-    method: "get",
+    method: "post",
     headers: {
       "Content-Type": "application/json",
     },
