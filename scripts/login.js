@@ -21,7 +21,8 @@ form.addEventListener("submit", function (e) {
       if (res.ok) {
         const data = res.json();
         console.log("Data", data);
-        localStorage.setItem("accessToken", data.accessToken);
+        localStorage.setItem("accessToken", JSON.stringify(data.accessToken);
+        window.location.href = "dashboard.html";
         return data;
       } else {
         throw new Error("Failed to fetchdata from API");
