@@ -13,6 +13,8 @@ document.getElementById("form").addEventListener("submit", function (e) {
     avatar: avatar,
   };
 
+  console.log(payload);
+
   fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
     method: "post",
     headers: {
