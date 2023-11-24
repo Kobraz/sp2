@@ -22,6 +22,8 @@ form.addEventListener("submit", function (e) {
         const data = res.json();
         console.log("Data", data);
         localStorage.setItem("accessToken", JSON.stringify(data.accessToken));
+        localStorage.setItem("name", JSON.stringify(data.name));
+        localStorage.setItem("email", JSON.stringify(data.email));
         /* window.location.href = "dashboard.html"; */
         return data;
       } else {
