@@ -14,7 +14,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
   };
 
   fetch("https://api.noroff.dev/api/v1/auction/auth/register", {
-    method: "POST",
+    method: "get",
     headers: {
       "Content-Type": "application/json",
     },
