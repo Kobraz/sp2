@@ -18,7 +18,7 @@ window.onload = function () {
     document.getElementById("email").innerHTML = email;
   }
 
-  if (credit) {
-    document.getElementById("credit").innerHTML = credits;
+  if (credits) {
+    document.getElementById("credits").innerHTML = credits;
   }
 };
