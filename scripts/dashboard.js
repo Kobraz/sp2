@@ -2,23 +2,26 @@ window.onload = function () {
   let userName = localStorage.getItem("name");
   let avatar = localStorage.getItem("avatar");
   let email = localStorage.getItem("email");
-  let credit = localStorage.getItem("credit");
+  let credits = localStorage.getItem("credits");
 
   let rUserName = JSON.parse(userName);
+  let rAvatar = JSON.parse(avatar);
+  let rEmail = JSON.parse(email);
+  let rCredits = JSON.parse(credit);
 
   if (rUserName) {
     document.getElementById("userName").innerHTML = rUserName;
   }
 
-  if (avatar) {
-    document.getElementById("avatar").src = avatar;
+  if (rAvatar) {
+    document.getElementById("avatar").src = rAvatar;
   }
 
-  if (email) {
-    document.getElementById("email").innerHTML = email;
+  if (rEmail) {
+    document.getElementById("email").innerHTML = rEmail;
   }
 
-  if (credit) {
-    document.getElementById("credit").innerHTML = credit;
+  if (rCredits) {
+    document.getElementById("credit").innerHTML = rCredits;
   }
 };
