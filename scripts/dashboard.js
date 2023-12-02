@@ -4,7 +4,9 @@ window.onload = function () {
   let email = localStorage.getItem("email");
   let credits = localStorage.getItem("credits");
 
-  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits);
+  let userName2 = userName.replace(/^"(.*)"$/, "$1");
+
+  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits + " " + userName2);
 
   if (userName) {
     document.getElementById("userName").innerHTML = userName;
