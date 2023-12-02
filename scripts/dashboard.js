@@ -9,20 +9,7 @@ window.onload = function () {
 
   let imageElement = document.getElementById("avatar");
 
-  console.log(
-    "Values from localstorage: " +
-      userName +
-      " " +
-      avatar +
-      " " +
-      email +
-      " " +
-      credits +
-      " " +
-      userName2 +
-      " " +
-      email2
-  );
+  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits + " " + userName2 + " " + email2);
 
   if (userName) {
     document.getElementById("userName").innerHTML = userName2;
