@@ -5,11 +5,25 @@ window.onload = function () {
   let credits = localStorage.getItem("credits");
 
   let userName2 = userName.replace(/^"(.*)"$/, "$1");
+  let email2 = email.replace(/^"(.*)"$/, "$1");
 
-  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits + " " + userName2);
+  console.log(
+    "Values from localstorage: " +
+      userName +
+      " " +
+      avatar +
+      " " +
+      email +
+      " " +
+      credits +
+      " " +
+      userName2 +
+      " " +
+      email2
+  );
 
   if (userName) {
-    document.getElementById("userName").innerHTML = userName;
+    document.getElementById("userName").innerHTML = userName2;
   }
 
   if (avatar) {
@@ -17,7 +31,7 @@ window.onload = function () {
   }
 
   if (email) {
-    document.getElementById("email").innerHTML = email;
+    document.getElementById("email").innerHTML = email2;
   }
 
   if (credits) {
