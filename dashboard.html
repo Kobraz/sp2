@@ -3,9 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auction Dashboard</title>
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <title>Auction Site</title>
   </head>
   <body>
-    <h1>Welcome to your dashboard</h1>
+    <header>
+      <div class="top-section">
+        <h1>Auction Site</h1>
+        <label for="menu-toggle" class="menu-toggle-label">
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+          <span class="menu-toggle-bar"></span>
+        </label>
+      </div>
+      <div class="bottom-section">
+        <div class="userInfo">
+          <img
+            class="avatar"
+            src="https://rfh-sp2auction.netlify.app/image/avatar1.png"
+            alt="User"
+            height="48"
+            width="48"
+          />
+          <div class="userDetails">
+            <p>Name: Roar Falch Hanssen</p>
+            <p>Email: roar.f.hanssen@gmail.com</p>
+            <p>Credit: 1000</p>
+          </div>
+        </div>
+        <div class="menu-dropdown">
+          <label for="menu-dropdown-toggle" class="menu-dropdown-toggle-label">
+            <i class="fas fa-caret-down"></i>
+          </label>
+          <nav>
+            <input type="checkbox" id="menu-toggle" />
+            <ul id="menu-dropdown-content">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Card Title</h2>
+        <p>Card content</p>
+      </div>
+
+      <div class="card">
+        <h2>Card Title</h2>
+        <p>Card content</p>
+      </div>
+
+      <div class="card">
+        <h2>Card Title</h2>
+        <p>Card content</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2022 Auction Site. All rights reserved.</p>
+    </footer>
   </body>
 </html>
