@@ -2,7 +2,7 @@ window.onload = function () {
   let userName = localStorage.getItem("name");
   let avatar = localStorage.getItem("avatar");
   let email = localStorage.getItem("email");
-  let credit = localStorage.getItem("credit");
+  let credits = localStorage.getItem("credits");
 
   console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credit);
 
@@ -19,6 +19,6 @@ window.onload = function () {
   }
 
   if (credit) {
-    document.getElementById("credit").innerHTML = credit;
+    document.getElementById("credit").innerHTML = credits;
   }
 };
