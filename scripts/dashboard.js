@@ -1,5 +1,5 @@
 window.onload = function () {
-  let userName = localStorage.getItem(name);
+  let userName = localStorage.getItem("name");
   let avatar = localStorage.getItem("avatar");
   let email = localStorage.getItem("email");
   let credit = localStorage.getItem("credit");
