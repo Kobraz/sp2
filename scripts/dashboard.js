@@ -4,8 +4,10 @@ window.onload = function () {
   let email = localStorage.getItem("email");
   let credit = localStorage.getItem("credit");
 
-  if (userName) {
-    document.getElementById("userName").innerHTML = userName;
+  let rUserName = JSON.parse(userName);
+
+  if (rUserName) {
+    document.getElementById("userName").innerHTML = rUserName;
   }
 
   if (avatar) {
