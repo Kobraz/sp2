@@ -9,16 +9,16 @@ window.onload = function () {
 
   let imageElement = document.getElementById("avatar");
 
-  let avatar2 = avatar.slice(1,-1);
+  let avatar2 = avatar.slice(1, -1);
 
-  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits + " " + userName2 + " " + email2 + " " +);
+  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits + " " + userName2 + " " + email2 + " " + avatar2);
 
   if (userName) {
     document.getElementById("userName").innerHTML = userName2;
   }
 
-  if (avatar) {
-    imageElement.src = avatar;
+  if (avatar2) {
+    imageElement.src = avatar2;
   }
 
   if (email) {
