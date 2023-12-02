@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -112,7 +114,18 @@ h1 {
   display: block;
 }
 
-/* Show the menu dropdown on larger screens */
+#userName {
+  font-family: "Oxanium", cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#credit {
+  background-color: #00ff00;
+  border: 1px solid black;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .menu-toggle-label {
     display: block;
