@@ -2,26 +2,23 @@ window.onload = function () {
   let userName = localStorage.getItem("name");
   let avatar = localStorage.getItem("avatar");
   let email = localStorage.getItem("email");
-  let credits = localStorage.getItem("credits");
+  let credit = localStorage.getItem("credit");
 
-  let rUserName = JSON.parse(userName);
-  let rAvatar = JSON.parse(avatar);
-  let rEmail = JSON.parse(email);
-  let rCredits = JSON.parse(credit);
+  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credit);
 
-  if (rUserName) {
-    document.getElementById("userName").innerHTML = rUserName;
+  if (userName) {
+    document.getElementById("userName").innerHTML = userName;
   }
 
-  if (rAvatar) {
-    document.getElementById("avatar").src = rAvatar;
+  if (avatar) {
+    document.getElementById("avatar").src = avatar;
   }
 
-  if (rEmail) {
-    document.getElementById("email").innerHTML = rEmail;
+  if (email) {
+    document.getElementById("email").innerHTML = email;
   }
 
-  if (rCredits) {
-    document.getElementById("credit").innerHTML = rCredits;
+  if (credit) {
+    document.getElementById("credit").innerHTML = credit;
   }
 };
