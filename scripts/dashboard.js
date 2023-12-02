@@ -16,22 +16,8 @@ window.onload = function () {
   let avatar2 = avatar.slice(1, -1);
 
   //console.log values from local storage, and values after removing double quotation marks//
-  console.log(
-    "Values from localstorage: " +
-      userName +
-      " " +
-      avatar +
-      " " +
-      email +
-      " " +
-      credits +
-      " /n New values: " +
-      userName2 +
-      " " +
-      avatar2 +
-      " " +
-      email2
-  );
+  console.log("Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits);
+  console.log("New values: " + userName2 + " " + avatar2 + " " + email2);
 
   //insert value userName2 into html doc//
   if (userName2) {
