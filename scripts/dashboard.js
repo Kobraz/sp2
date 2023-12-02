@@ -7,6 +7,8 @@ window.onload = function () {
   let userName2 = userName.replace(/^"(.*)"$/, "$1");
   let email2 = email.replace(/^"(.*)"$/, "$1");
 
+  let imageElement = document.getElementById("avatar");
+
   console.log(
     "Values from localstorage: " +
       userName +
@@ -27,7 +29,7 @@ window.onload = function () {
   }
 
   if (avatar) {
-    document.getElementById("avatar").src = avatar;
+    imageElement.src = avatar;
   }
 
   if (email) {
