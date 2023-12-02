@@ -17,7 +17,20 @@ window.onload = function () {
 
   //console.log values from local storage, and values after removing double quotation marks//
   console.log(
-    "Values from localstorage: " + userName + " " + avatar + " " + email + " " + credits + " New values: " + userName2 + " " + avatar2 + " " + email2
+    "Values from localstorage: " +
+      userName +
+      " " +
+      avatar +
+      " " +
+      email +
+      " " +
+      credits +
+      " /n New values: " +
+      userName2 +
+      " " +
+      avatar2 +
+      " " +
+      email2
   );
 
   //insert value userName2 into html doc//
