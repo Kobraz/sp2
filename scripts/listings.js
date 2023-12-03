@@ -19,4 +19,6 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     console.log(objectData[0].id);
     console.log(objectData[0].title);
     console.log(objectData[0].description);
+
+    console.log(values.title);
   });
