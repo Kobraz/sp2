@@ -47,6 +47,7 @@ h1 {
 .userInfo img {
   border-radius: 50%;
   margin-right: 10px;
+  border: 1px solid white;
 }
 
 .userDetails {
