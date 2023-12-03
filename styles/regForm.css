@@ -198,3 +198,8 @@ button:hover {
   align-self: center;
   padding: 10px;
 }
+
+.noAccount a {
+  text-decoration: solid;
+  color: blue;
+}
