@@ -15,7 +15,7 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
 
     //const apiArray = [${values.id},${values.title}, ${values.description}, ${values.price}, ${values.category}, ${values.rating}, ${values.image}]
 
-    console.log(objectData[0].id);
+    console.log("Id: " + objectData[0].id);
     console.log(objectData[0].title);
     console.log(objectData[0].description);
   });
