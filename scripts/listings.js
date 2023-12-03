@@ -9,9 +9,9 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
         <td><a href="details.html?id=${values.id}">${values.title}</a></td>
         <td>${values.description}</td>
         <td><img src="${values.media}"></td>
-        <td><img src="${values.tags}"></td>
-        <td><img src="${values.created}"></td>
-        <td><img src="${values.updated}"></td>
+        <td>${values.tags}</td>
+        <td>${values.created}</td>
+        <td>${values.updated}</td>
         </tr>`;
     });
     document.getElementById("tableBody").innerHTML = tableData;
