@@ -7,7 +7,7 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     let tableData = "";
     objectData.map((values) => {
       tableData += ` <tr>
-        <td><a href="details.html?id=${values.id}">${values.title}</a></td>
+        <td><a href="details.html?id=${values.id}">${values.title}-test</a></td>
         <td>${values.description}</td>
         <td><img src="${values.media}"></td>
         </tr>`;
