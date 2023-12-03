@@ -157,6 +157,7 @@ footer {
   left: 0;
   right: 0;
   background-color: var(--primary-color);
+  color: var(--primary-textColor);
   height: 20px;
   padding: 10px;
   display: flex;
