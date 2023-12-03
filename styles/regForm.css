@@ -8,6 +8,7 @@
 :root {
   --primary-color: #461919;
   --primary-hoverColor: #953232;
+  --primary-backgroundColor: #eaeaea;
 }
 
 .container {
