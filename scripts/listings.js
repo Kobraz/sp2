@@ -37,6 +37,16 @@ function populateTable(data) {
 
     cardHolder.appendChild(card);
   });
+
+  console.log("Id: " + objectData[0].id);
+  console.log("Title: " + objectData[0].title);
+  console.log("Description: " + objectData[0].description);
+  console.log("Media: " + objectData[0].media);
+  console.log("Tags: " + objectData[0].tags);
+  console.log("Created: " + objectData[0].created);
+  console.log("Updated: " + objectData[0].updated);
+
+  console.log("tableData: " + tableData);
 }
 
 // Function to fetch data from API and populate table
