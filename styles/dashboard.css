@@ -91,7 +91,7 @@ li {
   list-style: none;
 }
 
-a {
+a .nav-link {
   color: var(--primary-textColor);
   text-decoration: none;
 }
@@ -171,6 +171,10 @@ footer {
 
 #tableBody {
   color: black;
+}
+
+table {
+  width: 100%;
 }
 
 /* @media */
