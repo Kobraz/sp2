@@ -1,5 +1,5 @@
 function populateTable(data) {
-  const card = document.getElementById("card");
+  const cardHolder = document.getElementById("cardHolder");
 
   data.forEach((item) => {
     const card = document.createElement("div");
@@ -35,7 +35,7 @@ function populateTable(data) {
     cardUpdated.textContent = item.updated;
     card.appendChild(cardUpdated);
 
-    card.appendChild(card);
+    cardHolder.appendChild(card);
   });
 }
 
