@@ -1,20 +1,28 @@
-const url = "https://api.noroff.dev/api/v1/auction/listings";
-
-fetch(url)
-  .then((response) => response.json())
+fetch("https://api.noroff.dev/api/v1/auction/listings")
   .then((data) => {
-    let result = "";
-    data.forEach((values) => {
-      result += `
-        <tr>
-          <td><a href="details.html?id=${values.id}">${values.title}</a></td>
-          <td>${values.description}</td>
-          <td><img src="${values.media}"></td>
-          <td>${values.tags}</td>
-          <td>${values.created}</td>
-          <td>${values.updated}</td>
+    return data.json();
+  })
+  .then((objectData) => {
+    let tableData = "";
+    objectData.map((values) => {
+      tableData += ` <tr>
+        <td><a href="details.html?id=${values.id}">${objectData.title}</a></td>
+        <td>${values.description}</td>
+        <td><img src="${values.media}"></td>
+        <td>${values.tags}</td>
+        <td>${values.created}</td>
+        <td>${values.updated}</td>
         </tr>`;
     });
-    document.getElementById("tableBody").innerHTML = result;
-  })
-  .catch((error) => console.error("Error:", error));
+    document.getElementById("tableBody").innerHTML = tableData;
+
+    //const apiArray = [${values.id},${values.title}, ${values.description}, ${values.price}, ${values.category}, ${values.rating}, ${values.image}]
+
+    console.log("Id: " + objectData[0].id);
+    console.log("Title: " + objectData[0].title);
+    console.log("Description: " + objectData[0].description);
+    console.log("Media: " + objectData[0].media);
+    console.log("Tags: " + objectData[0].tags);
+    console.log("Created: " + objectData[0].created);
+    console.log("Updated: " + objectData[0].updated);
+  });
