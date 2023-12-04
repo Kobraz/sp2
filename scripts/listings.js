@@ -1,6 +1,15 @@
 function populateTable(data) {
   const cardHolder = document.getElementById("cardHolder");
 
+  let mediaHTML = "";
+  if (Array.isArray(values.media)) {
+    values.media.forEach((mediaUrl) => {
+      mediaHTML += `<img src="${mediaUrl}" alt="image">`;
+    });
+  } else {
+    mediaHTML = `<img src="${values.media}" alt="image">`;
+  }
+
   data.forEach((item) => {
     const card = document.createElement("div");
     card.className = "card";
@@ -22,7 +31,7 @@ function populateTable(data) {
 
     const cardMedia = document.createElement("p");
     cardMedia.id = "cardMedia";
-    cardMedia.textContent = `<img src="${item.media}" alt="image">`;
+    cardMedia.textContent = mediaHTML;
     card.appendChild(cardMedia);
 
     const cardTags = document.createElement("p");
@@ -60,7 +69,7 @@ function populateTable(data) {
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
-  console.log("test 1");
+  console.log("test 2");
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
