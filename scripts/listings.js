@@ -15,9 +15,14 @@ function populateTable(data) {
     cardDescription.textContent = item.description;
     card.appendChild(cardDescription);
 
-    const cardMedia = document.createElement("p");
+    /* const cardMedia = document.createElement("p");
     cardMedia.id = "cardMedia";
     cardMedia.textContent = item.media;
+    card.appendChild(cardMedia); */
+
+    const cardMedia = document.createElement("p");
+    cardMedia.id = "cardMedia";
+    cardMedia.textContent = `<img src="${item.media}" alt="image">`;
     card.appendChild(cardMedia);
 
     const cardTags = document.createElement("p");
@@ -55,7 +60,7 @@ function populateTable(data) {
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
-  console.log("test 11");
+  console.log("test 1");
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
