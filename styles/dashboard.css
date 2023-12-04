@@ -169,6 +169,12 @@ footer {
   width: 100px;
 }
 
+#tableBody {
+  color: black;
+}
+
+/* @media */
+
 @media (max-width: 768px) {
   .card {
     width: 95%;
