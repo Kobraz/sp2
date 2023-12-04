@@ -181,6 +181,8 @@ footer {
 
 table {
   width: 80%;
+  background-color: var(--primary-whiteColor);
+  border: 1px solid black;
 }
 
 /* @media */
