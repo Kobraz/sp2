@@ -16,7 +16,7 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
       }
 
       tableData += ` <tr>
-        <td><a href="details.html?id=${values.id}">${tableData.title}</a></td>
+        <td><a href="details.html?id=${values.id}">${values.title}</a></td>
         <td>${values.description}</td>
         <td>${mediaHTML}</td>
         <td>${values.tags}</td>
