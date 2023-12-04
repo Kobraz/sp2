@@ -1,18 +1,18 @@
 function populateTable(data) {
   const cardHolder = document.getElementById("cardHolder");
 
-  let mediaHTML = "";
-  if (Array.isArray(data.media)) {
-    values.media.forEach((mediaUrl) => {
-      mediaHTML += `<img src="${mediaUrl}" alt="image">`;
-    });
-  } else {
-    mediaHTML = `<img src="${data.media}" alt="image">`;
-  }
-
   data.forEach((item) => {
     const card = document.createElement("div");
     card.className = "card";
+
+    let mediaHTML = "";
+    if (Array.isArray(item.media)) {
+      values.media.forEach((mediaUrl) => {
+        mediaHTML += `<img src="${mediaUrl}" alt="image">`;
+      });
+    } else {
+      mediaHTML = `<img src="${item.media}" alt="image">`;
+    }
 
     const cardHeader = document.createElement("h2");
     cardHeader.id = "cardHeader";
@@ -69,7 +69,7 @@ function populateTable(data) {
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
-  console.log("test 3");
+  console.log("test 4");
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
