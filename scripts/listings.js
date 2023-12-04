@@ -7,7 +7,7 @@ function populateTable(data) {
 
     const cardHeader = document.createElement("h2");
     cardHeader.id = "cardHeader";
-    cardHeader.textContent = item.header;
+    cardHeader.textContent = data.header;
     card.appendChild(cardHeader);
 
     const cardDescription = document.createElement("p");
