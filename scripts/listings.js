@@ -2,7 +2,7 @@ function populateTable(data) {
   const cardHolder = document.getElementById("cardHolder");
 
   let mediaHTML = "";
-  if (Array.isArray(item.media)) {
+  if (Array.isArray(data.media)) {
     values.media.forEach((mediaUrl) => {
       mediaHTML += `<img src="${mediaUrl}" alt="image">`;
     });
