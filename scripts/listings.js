@@ -27,6 +27,11 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     document.getElementById("tableBody").innerHTML = tableData;
 
     cardHeader.innerHTML += `${values.title}`;
+    cardDescription.innerHTML += `${values.description}`;
+    cardMedia.innerHTML += `${mediaHTML}`;
+    cardTags.innerHTML += `${values.tags}`;
+    cardCreated.innerHTML += `${values.created}`;
+    cardUpdated.innerHTML += `${values.updated}`;
 
     console.log("Id: " + objectData[0].id);
     console.log("Title: " + objectData[0].title);
