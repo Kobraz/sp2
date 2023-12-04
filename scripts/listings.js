@@ -38,6 +38,7 @@ function populateTable(data) {
     cardHolder.appendChild(card);
   });
 
+  console.log("---------------------------------------------");
   console.log("Id: " + data[0].id);
   console.log("Title: " + data[0].title);
   console.log("Description: " + data[0].description);
