@@ -7,32 +7,32 @@ function populateTable(data) {
 
     const cardHeader = document.createElement("h2");
     cardHeader.id = "cardHeader";
-    cardHeader.textContent = data.title;
+    cardHeader.textContent = item.title;
     card.appendChild(cardHeader);
 
     const cardDescription = document.createElement("p");
     cardDescription.id = "cardDescription";
-    cardDescription.textContent = data.description;
+    cardDescription.textContent = item.description;
     card.appendChild(cardDescription);
 
     const cardMedia = document.createElement("p");
     cardMedia.id = "cardMedia";
-    cardMedia.textContent = data.media;
+    cardMedia.textContent = item.media;
     card.appendChild(cardMedia);
 
     const cardTags = document.createElement("p");
     cardTags.id = "cardTags";
-    cardTags.textContent = data.tags;
+    cardTags.textContent = item.tags;
     card.appendChild(cardTags);
 
     const cardCreated = document.createElement("p");
     cardCreated.id = "cardCreated";
-    cardCreated.textContent = data.created;
+    cardCreated.textContent = item.created;
     card.appendChild(cardCreated);
 
     const cardUpdated = document.createElement("p");
     cardUpdated.id = "cardUpdated";
-    cardUpdated.textContent = data.updated;
+    cardUpdated.textContent = item.updated;
     card.appendChild(cardUpdated);
 
     cardHolder.appendChild(card);
@@ -55,7 +55,7 @@ function populateTable(data) {
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
-  console.log("test 10");
+  console.log("test 11");
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
