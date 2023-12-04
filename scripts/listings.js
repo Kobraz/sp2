@@ -5,9 +5,9 @@ function populateTable(data) {
     const card = document.createElement("div");
     card.className = "card";
 
-    const cardHeader = document.createElement("h2");
+    const cardHeader = document.createElement("div");
     cardHeader.id = "cardHeader";
-    cardHeader.textContent = data.header;
+    cardHeader.textContent = data.title;
     card.appendChild(cardHeader);
 
     const cardDescription = document.createElement("p");
@@ -55,7 +55,7 @@ function populateTable(data) {
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
-  console.log("test 6");
+  console.log("test 8");
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
