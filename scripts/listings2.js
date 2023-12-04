@@ -3,22 +3,12 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     return data.json();
   })
   .then((objectData) => {
-    let tableData = objectData.map((values) => {}); 
-    objectData.map((values) => {
-      let mediaHTML = '';
-      if (Array.isArray(values.media)) {
-         values.media.forEach(mediaUrl => {
-           mediaHTML += `<img src="${mediaUrl}" alt="image">`;
-         });
-      } else {
-         mediaHTML = `<img src="${values.media}" alt="image">`;
-      }
-     
+    let tableData = objectData.map((values) => {});
     objectData.map((values) => {
       tableData += ` <tr>
         <td><a href="details.html?id=${values.id}">${values.title}</a></td>
         <td>${values.description}</td>
-        <td><img src="${values.media}" alt="image"></td>
+        <td><img src="${values.media}"></td>
         <td>${values.tags}</td>
         <td>${values.created}</td>
         <td>${values.updated}</td>
