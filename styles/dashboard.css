@@ -160,6 +160,12 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+#cardHeader {
+  font-family: "Exo 2", sans-serif;
+  font-size: 25px;
+  color: var(--primary-redColor);
+}
+
 footer {
   position: fixed;
   bottom: 0;
