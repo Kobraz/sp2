@@ -2,7 +2,7 @@ function populateTable(data) {
   const cardHolder = document.getElementById("cardHolder");
 
   data.forEach((item) => {
-    const card = document.createElement("div");
+    const card = document.createElement("h2");
     card.className = "card";
 
     const cardHeader = document.createElement("div");
@@ -55,7 +55,7 @@ function populateTable(data) {
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
-  console.log("test 9");
+  console.log("test 10");
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
