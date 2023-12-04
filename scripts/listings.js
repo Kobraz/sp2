@@ -2,37 +2,37 @@ function populateTable(data) {
   const cardHolder = document.getElementById("cardHolder");
 
   data.forEach((item) => {
-    const card = document.createElement("h2");
+    const card = document.createElement("div");
     card.className = "card";
 
-    const cardHeader = document.createElement("div");
+    const cardHeader = document.createElement("h2");
     cardHeader.id = "cardHeader";
     cardHeader.textContent = data.title;
     card.appendChild(cardHeader);
 
     const cardDescription = document.createElement("p");
     cardDescription.id = "cardDescription";
-    cardDescription.textContent = item.description;
+    cardDescription.textContent = data.description;
     card.appendChild(cardDescription);
 
     const cardMedia = document.createElement("p");
     cardMedia.id = "cardMedia";
-    cardMedia.textContent = item.media;
+    cardMedia.textContent = data.media;
     card.appendChild(cardMedia);
 
     const cardTags = document.createElement("p");
     cardTags.id = "cardTags";
-    cardTags.textContent = item.tags;
+    cardTags.textContent = data.tags;
     card.appendChild(cardTags);
 
     const cardCreated = document.createElement("p");
     cardCreated.id = "cardCreated";
-    cardCreated.textContent = item.created;
+    cardCreated.textContent = data.created;
     card.appendChild(cardCreated);
 
     const cardUpdated = document.createElement("p");
     cardUpdated.id = "cardUpdated";
-    cardUpdated.textContent = item.updated;
+    cardUpdated.textContent = data.updated;
     card.appendChild(cardUpdated);
 
     cardHolder.appendChild(card);
