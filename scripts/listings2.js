@@ -3,7 +3,7 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     return data.json();
   })
   .then((objectData) => {
-    let tableData = objectData.map((values) => {});
+    let tableData = "");
 
     //--
     objectData.map((values) => {
