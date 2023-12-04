@@ -25,4 +25,6 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     console.log("Tags: " + objectData[0].tags);
     console.log("Created: " + objectData[0].created);
     console.log("Updated: " + objectData[0].updated);
+
+    console.log("tableData: " + tableData);
   });
