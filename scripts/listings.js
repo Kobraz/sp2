@@ -54,8 +54,8 @@ function populateTable(data) {
   console.log("tableData: " + data);
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
-console.log("test");
-    );
+  );
+  console.log("test");
 }
 
 // Function to fetch data from API and populate table
