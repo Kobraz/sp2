@@ -7,7 +7,7 @@ function populateTable(data) {
       mediaHTML += `<img src="${mediaUrl}" alt="image">`;
     });
   } else {
-    mediaHTML = `<img src="${values.media}" alt="image">`;
+    mediaHTML = `<img src="${data.media}" alt="image">`;
   }
 
   data.forEach((item) => {
