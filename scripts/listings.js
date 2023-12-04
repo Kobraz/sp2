@@ -7,7 +7,7 @@ function populateTable(data) {
 
     let mediaHTML = "";
     if (Array.isArray(item.media)) {
-      values.media.forEach((mediaUrl) => {
+      item.media.forEach((mediaUrl) => {
         mediaHTML += `<img src="${mediaUrl}" alt="image">`;
       });
     } else {
