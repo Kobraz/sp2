@@ -91,7 +91,7 @@ li {
   list-style: none;
 }
 
-li a nav-link {
+li a {
   color: var(--primary-textColor);
   text-decoration: none;
 }
