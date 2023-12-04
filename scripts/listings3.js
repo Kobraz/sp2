@@ -3,22 +3,18 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
     return data.json();
   })
   .then((objectData) => {
-    let tableData = objectData.map((values) => {});
+    let tableData = "";
 
-    //--
-    objectData.map((values) => {
-      let mediaHTML = '';
+    objectData.forEach((values) => {
+      let mediaHTML = "";
       if (Array.isArray(values.media)) {
-         values.media.forEach(mediaUrl => {
-           mediaHTML += `<img src="${mediaUrl}" alt="image">`;
-         });
+        values.media.forEach((mediaUrl) => {
+          mediaHTML += `<img src="${mediaUrl}" alt="image">`;
+        });
       } else {
-         mediaHTML = `<img src="${values.media}" alt="image">`;
+        mediaHTML = `<img src="${values.media}" alt="image">`;
       }
-    //--
 
-
-    objectData.map((values) => {
       tableData += ` <tr>
         <td><a href="details.html?id=${values.id}">${values.title}</a></td>
         <td>${values.description}</td>
@@ -29,8 +25,6 @@ fetch("https://api.noroff.dev/api/v1/auction/listings")
         </tr>`;
     });
     document.getElementById("tableBody").innerHTML = tableData;
-
-    //const apiArray = [${values.id},${values.title}, ${values.description}, ${values.price}, ${values.category}, ${values.rating}, ${values.image}]
 
     console.log("Id: " + objectData[0].id);
     console.log("Title: " + objectData[0].title);
