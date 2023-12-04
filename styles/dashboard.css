@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary-color: #461919;
-  --primary-textColor: #ffffff;
+  --primary-redColor: #461919;
+  --primary-whiteColor: #ffffff;
 }
 
 * {
@@ -26,7 +26,13 @@ header {
   padding: 20px 0;
   box-sizing: border-box;
   position: relative;
-  background-color: var(--primary-color);
+  background-color: var(--primary-redColor);
+}
+
+main {
+  background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(50, 0, 0, 0.7)), url(/image/bg.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .top-section {
@@ -39,7 +45,7 @@ header {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--primary-textColor);
+  color: var(--primary-whiteColor);
 }
 
 .bottom-section {
@@ -59,7 +65,7 @@ h1 {
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 2px solid var(--primary-textColor);
+  border: 2px solid var(--primary-whiteColor);
 }
 
 .userDetails {
@@ -68,7 +74,7 @@ h1 {
 
 .userDetails p {
   margin: 0;
-  color: var(--primary-textColor);
+  color: var(--primary-whiteColor);
 }
 
 #userName {
@@ -92,7 +98,7 @@ li {
 }
 
 li a {
-  color: var(--primary-textColor);
+  color: var(--primary-whiteColor);
   text-decoration: none;
 }
 
@@ -156,8 +162,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--primary-color);
-  color: var(--primary-textColor);
+  background-color: var(--primary-redColor);
+  color: var(--primary-whiteColor);
   height: 20px;
   padding: 10px;
   display: flex;
