@@ -38,7 +38,9 @@ function populateTable(data) {
     cardHolder.appendChild(card);
   });
 
-  console.log("---------------------------------------------");
+  console.log(
+    "---------------------------------------------------------------------------------------------------------------------------------------"
+  );
   console.log("Id: " + data[0].id);
   console.log("Title: " + data[0].title);
   console.log("Description: " + data[0].description);
@@ -46,9 +48,13 @@ function populateTable(data) {
   console.log("Tags: " + data[0].tags);
   console.log("Created: " + data[0].created);
   console.log("Updated: " + data[0].updated);
-  console.log("---------------------------------------------");
+  console.log(
+    "---------------------------------------------------------------------------------------------------------------------------------------"
+  );
   console.log("tableData: " + data);
-  console.log("---------------------------------------------");
+  console.log(
+    "---------------------------------------------------------------------------------------------------------------------------------------"
+  );
 }
 
 // Function to fetch data from API and populate table
