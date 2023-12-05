@@ -193,7 +193,8 @@ footer {
   width: 300px;
 }
 
-.postImage:active .postImage:focus {
+.postImage:active,
+.postImage:focus {
   width: 800px;
   border: 2px solid pink;
 }
