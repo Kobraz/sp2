@@ -34,6 +34,7 @@ main {
   background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(50, 0, 0, 0.7)), url(../image/bg.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .top-section {
