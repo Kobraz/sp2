@@ -15,10 +15,14 @@ window.onload = function () {
     }
     // if user answers No, close the popup //
     else {
+      if (document.getElementById("creds")) {
+        document.getElementById("creds").innerHTML = "<a class='nav-link' href='login.html'>Log in</a>";
+      }
       window.close();
-      document.getElementById("creds").innerHTML = "<a href="login.html">Log in</a>";
       let imageElement = document.getElementById("avatar");
-      imageElement.src = "https://rfh-sp2auction.netlify.app/image/no_avatar1.png";
+      if (imageElement) {
+        imageElement.src = "https://rfh-sp2auction.netlify.app/image/no_avatar1.png";
+      }
     }
   }
 
