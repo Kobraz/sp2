@@ -172,8 +172,8 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  margin-left: 0;
+  margin-right: 0;
   background-color: var(--primary-redColor);
   color: var(--primary-whiteColor);
   height: 20px;
