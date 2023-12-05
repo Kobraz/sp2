@@ -171,7 +171,7 @@ li a {
 .cardHeader {
   font-family: "Exo 2", sans-serif;
   font-size: 55px;
-  color: var(--primary-redColor);
+  color: var(--primary-ligtRedColor);
 }
 
 footer {
