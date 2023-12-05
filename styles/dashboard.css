@@ -186,6 +186,10 @@ footer {
   border: 1px solid black;
 }
 
+.postImage:hover {
+  width: 300px;
+}
+
 #tableBody {
   color: black;
 }
