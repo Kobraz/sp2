@@ -168,7 +168,7 @@ li a {
   overflow-y: hidden;
 }
 
-.cardHeader {
+#cardHeader {
   font-family: "Exo 2", sans-serif;
   font-size: 55px;
   color: var(--primary-ligtRedColor);
