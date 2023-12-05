@@ -150,7 +150,7 @@ li a {
   background-color: white;
 }
 
-#cardHolder {
+.cardHolder {
   max-width: 90%;
 }
 
@@ -217,6 +217,10 @@ table {
 /* ---------- @media ---------- */
 
 @media (max-width: 768px) {
+  .cardHolder {
+    max-width: 95%;
+  }
+
   .card {
     max-width: 100%;
   }
@@ -265,6 +269,10 @@ table {
 }
 
 @media (max-width: 1440px, min-width: 768px) {
+  .cardHolder {
+    max-width: 95%;
+  }
+
   .card {
     max-width: 100%;
   }
