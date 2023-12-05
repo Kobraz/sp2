@@ -86,18 +86,17 @@ h1 {
 .userName {
   font-family: "Chela One", cursive;
   font-size: 28px;
-  color: blue;
 }
 
-#email {
+.email {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 48px;
   color: #aaa;
 }
 
-#credits {
+.credits {
   font-family: "Exo 2", sans-serif;
-  font-size: 22px;
+  font-size: 42px;
 }
 
 li {
