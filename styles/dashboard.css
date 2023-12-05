@@ -190,6 +190,10 @@ footer {
   width: 300px;
 }
 
+.postImage:active .postImage:focus {
+  width: 800px;
+}
+
 #tableBody {
   color: black;
 }
