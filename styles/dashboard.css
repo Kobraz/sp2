@@ -201,7 +201,7 @@ footer {
 .postImage:active,
 .postImage:focus {
   width: 800px;
-  border: 2px solid pink;
+  border: 2px solid var(--primary-redColor);
 }
 
 /* #tableBody {
