@@ -182,6 +182,7 @@ footer {
 
 .postImage {
   width: 100px;
+  padding: 5px;
 }
 
 #tableBody {
