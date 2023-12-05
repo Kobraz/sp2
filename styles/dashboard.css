@@ -121,6 +121,8 @@ li a {
 
 .nav-link {
   transition: 0.7s ease;
+  color: var(--primary-whiteColor);
+  text-decoration: none;
 }
 
 .nav-link:hover {
