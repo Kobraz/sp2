@@ -170,8 +170,8 @@ li a {
 
 #cardHeader {
   font-family: "Exo 2", sans-serif;
-  font-size: 55px;
-  color: var(--primary-ligtRedColor);
+  font-size: 25px;
+  color: var(--primary-redColor);
 }
 
 footer {
