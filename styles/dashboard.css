@@ -133,6 +133,7 @@ li a {
 .hamburger {
   display: none;
   cursor: pointer;
+  color: var(--primary-whiteColor);
 }
 
 .bar {
