@@ -124,6 +124,7 @@ li a {
 
 .nav-link:hover {
   color: var(--primary-ligtRedColor);
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -215,6 +216,11 @@ table {
 
   .hamburger {
     display: block;
+  }
+
+  .hamburger:hover {
+    display: block;
+    color: var(--primary-ligtRedColor);
   }
 
   .hamburger.active .bar:nth-child(2) {
