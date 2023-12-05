@@ -204,7 +204,7 @@ footer {
   border: 2px solid pink;
 }
 
-#tableBody {
+/* #tableBody {
   color: black;
 }
 
@@ -212,7 +212,7 @@ table {
   width: 80%;
   background-color: var(--primary-whiteColor);
   border: 1px solid black;
-}
+} */
 
 /* ---------- @media ---------- */
 
