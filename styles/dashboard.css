@@ -167,6 +167,8 @@ main {
   margin: 15px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #cardHeader {
@@ -183,7 +185,6 @@ footer {
   background-color: var(--primary-redColor);
   color: var(--primary-whiteColor);
   height: 20px;
-
   width: 100%;
   display: flex;
   justify-content: center;
