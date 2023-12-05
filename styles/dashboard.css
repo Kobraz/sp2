@@ -164,17 +164,6 @@ main {
   position: relative;
 }
 
-#card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  color: black;
-  padding: 20px;
-  max-width: 100%;
-  margin: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 #cardHeader {
   font-family: "Exo 2", sans-serif;
   font-size: 25px;
@@ -229,7 +218,50 @@ table {
     max-width: 100%;
   }
 
-  #card {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger:hover {
+    display: block;
+    color: var(--primary-ligtRedColor);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 150px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 1440px, min-width: 768px) {
+  .card {
     max-width: 100%;
   }
 
