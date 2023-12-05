@@ -31,7 +31,7 @@ function populateTable(data) {
 
     const cardMedia = document.createElement("p");
     cardMedia.id = "cardMedia";
-    cardMedia.textContent = mediaHTML;
+    cardMedia.innerHTML = mediaHTML;
     card.appendChild(cardMedia);
 
     const cardTags = document.createElement("p");
