@@ -153,6 +153,10 @@ main {
   justify-content: center;
 }
 
+#cardHolder {
+  max-width: 90%;
+}
+
 .card {
   background-color: #fff;
   border: 1px solid #ddd;
