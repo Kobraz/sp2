@@ -16,6 +16,7 @@ window.onload = function () {
     // if user answers No, close the popup //
     else {
       window.close();
+      document.getElementById("creds").innerText = "Not logged in";
     }
   }
 
