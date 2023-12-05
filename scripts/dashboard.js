@@ -11,12 +11,12 @@ window.onload = function () {
 
     // if user answers Yes, redirect them to the login.html page //
     if (answer) {
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
     // if user answers No, close the popup //
     else {
       if (document.getElementById("creds")) {
-        document.getElementById("creds").innerHTML = "<a class='nav-link' href='login.html'>Log in</a>";
+        document.getElementById("creds").innerHTML = "<a class='nav-link' href='index.html'>Log in</a>";
       }
       window.close();
       let imageElement = document.getElementById("avatar");
