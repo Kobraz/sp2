@@ -16,7 +16,7 @@ window.onload = function () {
     // if user answers No, close the popup //
     else {
       window.close();
-      document.getElementById("creds").innerText = "Not logged in";
+      document.getElementById("creds").innerHTML = "<a href="login.html">Log in</a>";
       let imageElement = document.getElementById("avatar");
       imageElement.src = "https://rfh-sp2auction.netlify.app/image/no_avatar1.png";
     }
