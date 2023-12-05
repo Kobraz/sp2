@@ -19,6 +19,11 @@ function populateTable(data) {
     cardHeader.textContent = item.title;
     card.appendChild(cardHeader);
 
+    const cardHeader = document.createElement("p");
+    cardHeader.id = "cardId";
+    cardHeader.textContent = item.id;
+    card.appendChild(cardHeader);
+
     const cardDescription = document.createElement("p");
     cardDescription.id = "cardDescription";
     cardDescription.textContent = item.description;
