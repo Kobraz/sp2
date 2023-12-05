@@ -79,9 +79,10 @@ h1 {
   color: var(--primary-whiteColor);
 }
 
-#userName {
+.userName {
   font-family: "Chela One", cursive;
   font-size: 28px;
+  color: yellow;
 }
 
 #email {
@@ -193,7 +194,7 @@ footer {
 
 .postImage {
   width: 100px;
-  padding: 5px;
+  margin: 5px;
   border: 1px solid black;
 }
 
