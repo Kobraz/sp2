@@ -23,6 +23,9 @@ window.onload = function () {
       if (imageElement) {
         imageElement.src = "https://rfh-sp2auction.netlify.app/image/no_avatar1.png";
       }
+      if (document.getElementById("Logoff")) {
+        document.getElementById("Logoff").style.display = "none";
+      }
     }
   }
 
