@@ -17,6 +17,8 @@ window.onload = function () {
     else {
       window.close();
       document.getElementById("creds").innerText = "Not logged in";
+      let imageElement = document.getElementById("avatar");
+      imageElement.src = "https://rfh-sp2auction.netlify.app/image/no_avatar1.png";
     }
   }
 
