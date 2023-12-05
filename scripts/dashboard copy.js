@@ -5,20 +5,6 @@ window.onload = function () {
   let email = localStorage.getItem("email");
   let credits = localStorage.getItem("credits");
 
-  // if any information is missing from local storage //
-  if (!userName || !avatar || !email || !credits) {
-    let answer = window.confirm("You are currently not logged in - do you wish to log in?");
-
-    // if user answers Yes, redirect them to the login.html page //
-    if (answer) {
-      window.location.href = "login.html";
-    }
-    // if user answers No, close the popup //
-    else {
-      window.close();
-    }
-  }
-
   //removeing double quotation marks from variables//
   let userName2 = userName.replace(/^"(.*)"$/, "$1");
   let email2 = email.replace(/^"(.*)"$/, "$1");
