@@ -220,6 +220,7 @@ table {
 
   .hamburger {
     display: block;
+    color: var(--primary-whiteColor);
   }
 
   .hamburger:hover {
@@ -267,6 +268,7 @@ table {
 
   .hamburger {
     display: block;
+    color: var(--primary-whiteColor);
   }
 
   .hamburger:hover {
