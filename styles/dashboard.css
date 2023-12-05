@@ -178,13 +178,13 @@ main {
 footer {
   position: fixed;
   bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  left: 0;
+  right: 0;
   background-color: var(--primary-redColor);
   color: var(--primary-whiteColor);
   height: 20px;
   padding: 10px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
