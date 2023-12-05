@@ -163,6 +163,17 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+#card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: black;
+  padding: 20px;
+  max-width: 100%;
+  margin: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 #cardHeader {
   font-family: "Exo 2", sans-serif;
   font-size: 25px;
@@ -213,6 +224,10 @@ table {
 
 @media (max-width: 768px) {
   .card {
+    max-width: 100%;
+  }
+
+  #card {
     max-width: 100%;
   }
 
