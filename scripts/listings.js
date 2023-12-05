@@ -16,6 +16,7 @@ function populateTable(data) {
 
     const cardHeader = document.createElement("h2");
     cardHeader.id = "cardHeader";
+    cardHeader.class = "cardHeader";
     cardHeader.textContent = item.title;
     card.appendChild(cardHeader);
 
@@ -28,11 +29,6 @@ function populateTable(data) {
     cardDescription.id = "cardDescription";
     cardDescription.textContent = item.description;
     card.appendChild(cardDescription);
-
-    /* const cardMedia = document.createElement("p");
-    cardMedia.id = "cardMedia";
-    cardMedia.textContent = item.media;
-    card.appendChild(cardMedia); */
 
     const cardMedia = document.createElement("p");
     cardMedia.id = "cardMedia";
