@@ -7,6 +7,8 @@ document.getElementById("form").addEventListener("submit", async function (event
   event.preventDefault();
 
   const newAvatarUrl = document.getElementById("imgURL").value;
+  const profileIdFromLocalStorage = localStorage.getItem("name");
+  const profileId = profileIdFromLocalStorage.slice(1, -1);
 
   console.log("Avatar: " + newAvatarUrl);
 
