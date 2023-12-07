@@ -43,7 +43,13 @@ async function updateAvatar(profileId, newAvatarUrl) {
 
     if (!response.ok) {
       /*throw new Error(`HTTP error: ${response.status}`);*/
+      const errorMessage = `HTTP error: ${response.status}`;
+      const responseText = await response.text(); // Get response body for more information
+      console.error(errorMessage);
+      console.error("Response:", responseText);
+
       console.log(`HTTP error: ${response.status}`);
+
       return;
     }
 
