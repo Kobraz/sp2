@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const response = await fetch(url, {
         method: "PUT",
         headers: {
-          Authorization: `Bearer ${accessToken}`,
+          Authorization: `Bearer + ${accessToken}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ avatar: newAvatarUrl }),
