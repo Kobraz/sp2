@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const profileId = profileIdFromLocalStorage.slice(1, -1);
   const accessToken = localStorage.getItem("accessToken");
 
-  console.log("Token" + accessToken);
+  console.log("Token: " + accessToken);
 
   document.getElementById("form").addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
-  console.log("ProfileID (sliced)...: " + profileId);
+  console.log("ProfileID (sliced): " + profileId);
 });
 
 /*-----------------------------------------------------------*/
