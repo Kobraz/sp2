@@ -1,3 +1,9 @@
+const profileIdFromLocalStorage = localStorage.getItem("name");
+const profileId = profileIdFromLocalStorage.slice(1, -1);
+
+console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
+console.log("ProfileID (sliced): " + profileId);
+
 document.addEventListener("DOMContentLoaded", function () {
   /* const accessToken = localStorage.getItem("accessToken");*/
   /* console.log("Token: " + accessToken); */
@@ -7,12 +13,6 @@ document.getElementById("form").addEventListener("submit", async function (event
   event.preventDefault();
 
   const newAvatarUrl = document.getElementById("imgURL").value;
-
-  const profileIdFromLocalStorage = localStorage.getItem("name");
-  const profileId = profileIdFromLocalStorage.slice(1, -1);
-
-  console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
-  console.log("ProfileID (sliced): " + profileId);
 
   console.log("Avatar: " + newAvatarUrl);
 
