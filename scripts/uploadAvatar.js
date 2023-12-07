@@ -18,39 +18,39 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error updating avatar:", error);
     }
   });
-
-  async function updateAvatar(profileId, newAvatarUrl) {
-    const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}/media`;
-    const accessToken = localStorage.getItem("accessToken");
-
-    try {
-      const response = await fetch(url, {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ avatar: newAvatarUrl }),
-      });
-
-      console.log("Response: " + response);
-
-      if (!response.ok) {
-        throw new Error(`HTTP error: ${response.status}`);
-      }
-
-      const result = await response.json();
-      console.log("Avatar updated successfully:", result);
-    } catch (error) {
-      throw new Error(`Error updating avatar: ${error.message}`);
-    }
-  }
-
-  console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
-  console.log("ProfileID (sliced): " + profileId);
-
-  console.log("Token: " + accessToken);
 });
+
+async function updateAvatar(profileId, newAvatarUrl) {
+  const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}/media`;
+  const accessToken = localStorage.getItem("accessToken");
+
+  try {
+    const response = await fetch(url, {
+      method: "PUT",
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ avatar: newAvatarUrl }),
+    });
+
+    console.log("Response: " + response);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log("Avatar updated successfully:", result);
+  } catch (error) {
+    throw new Error(`Error updating avatar: ${error.message}`);
+  }
+}
+
+console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
+console.log("ProfileID (sliced): " + profileId);
+
+console.log("Token: " + accessToken);
 
 /*-----------------------------------------------------------*/
 /* 
