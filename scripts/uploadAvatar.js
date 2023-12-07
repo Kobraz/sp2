@@ -1,4 +1,4 @@
-/* document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const profileIdFromLocalStorage = localStorage.getItem("name");
   const profileId = profileIdFromLocalStorage.slice(1, -1);
   const accessToken = localStorage.getItem("accessToken");
@@ -36,8 +36,7 @@
 
       const result = await response.json();
       console.log("Avatar updated successfully:", result);
-    } 
-    catch (error) {
+    } catch (error) {
       throw new Error(`Error updating avatar: ${error.message}`);
     }
   }
@@ -47,10 +46,11 @@
 });
 
 console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
-console.log("ProfileID (sliced): " + profileId); */
+console.log("ProfileID (sliced): " + profileId);
+console.log("Token" + accessToken);
 
 /*-----------------------------------------------------------*/
-
+/* 
 const apiURL = "https://api.noroff.dev/api/v1/auction/profiles/";
 const profileId = localStorage.getItem("name");
 
@@ -81,3 +81,4 @@ async function updateAvatar(data) {
     return false;
   }
 }
+ */
