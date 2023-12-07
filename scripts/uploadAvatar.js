@@ -4,20 +4,20 @@ document.addEventListener("DOMContentLoaded", function () {
   /* const accessToken = localStorage.getItem("accessToken");*/
 
   /* console.log("Token: " + accessToken); */
+});
 
-  document.getElementById("form").addEventListener("submit", async function (event) {
-    event.preventDefault();
+document.getElementById("form").addEventListener("submit", async function (event) {
+  event.preventDefault();
 
-    const newAvatarUrl = document.getElementById("imgURL").value;
+  const newAvatarUrl = document.getElementById("imgURL").value;
 
-    console.log("Avatar: " + newAvatarUrl);
+  console.log("Avatar: " + newAvatarUrl);
 
-    try {
-      await updateAvatar(profileId, newAvatarUrl);
-    } catch (error) {
-      console.error("Error updating avatar:", error);
-    }
-  });
+  try {
+    await updateAvatar(profileId, newAvatarUrl);
+  } catch (error) {
+    console.error("Error updating avatar:", error);
+  }
 });
 
 async function updateAvatar(profileId, newAvatarUrl) {
