@@ -53,7 +53,7 @@ async function updateAvatar(profileId, newAvatarUrl) {
 /* console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
 console.log("ProfileID (sliced): " + profileId); */
 
-console.log("Token: " + accessToken);
+/* console.log("Token: " + accessToken); */
 
 /*-----------------------------------------------------------*/
 /* 
