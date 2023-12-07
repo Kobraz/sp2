@@ -6,7 +6,7 @@ console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
 console.log("ProfileID (sliced): " + profileId);
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Token: " + accessToken);
+  /*  console.log("Token: " + accessToken); */
 });
 
 document.getElementById("form").addEventListener("submit", async function (event) {
