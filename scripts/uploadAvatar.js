@@ -1,6 +1,6 @@
 const profileIdFromLocalStorage = localStorage.getItem("name");
 const profileId = profileIdFromLocalStorage.slice(1, -1);
-const accessToken = localStorage.getItem("accessToken");
+/* const accessToken = localStorage.getItem("accessToken"); */
 
 console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
 console.log("ProfileID (sliced): " + profileId);
