@@ -38,4 +38,5 @@ async function updateAvatar(profileId, newAvatarUrl) {
 }
 
 // Replace profileId with the actual profile ID
-const profileId = "your_profile_id_here";
+const profileIdFromLocalStorage = localStorage.getItem("name");
+const profileId = profileIdFromLocalStorage.slice(1, -1);
