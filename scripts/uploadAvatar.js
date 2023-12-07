@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function updateAvatar(profileId, newAvatarUrl) {
     const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}/media`;
+    const accessToken = localStorage.getItem("accessToken");
 
     try {
       const response = await fetch(url, {
