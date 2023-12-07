@@ -1,6 +1,6 @@
 const profileIdFromLocalStorage = localStorage.getItem("name");
 const profileId = profileIdFromLocalStorage.slice(1, -1);
-/* const accessToken = localStorage.getItem("accessToken"); */
+const accessToken = localStorage.getItem("accessToken");
 
 console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
 console.log("ProfileID (sliced): " + profileId);
@@ -25,8 +25,8 @@ document.getElementById("form").addEventListener("submit", async function (event
 
 async function updateAvatar(profileId, newAvatarUrl) {
   const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}/media`;
-  const accessToken = localStorage.getItem("accessToken");
-
+  /* const accessToken = localStorage.getItem("accessToken");
+   */
   /*   const profileIdFromLocalStorage = localStorage.getItem("name");
   const profileId = profileIdFromLocalStorage.slice(1, -1);
  */
