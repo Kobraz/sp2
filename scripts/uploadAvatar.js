@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         body: JSON.stringify({ avatar: newAvatarUrl }),
       });
 
+      console.log("Response: " + response);
+
       if (!response.ok) {
         throw new Error(`HTTP error: ${response.status}`);
       }
