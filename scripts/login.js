@@ -32,6 +32,7 @@ if (accessToken) {
       .then((data) => {
         console.log("Data", data);
         localStorage.setItem("accessToken", JSON.stringify(data.accessToken));
+        localStorage.setItem("id", JSON.stringify(data.id));
         localStorage.setItem("name", JSON.stringify(data.name));
         localStorage.setItem("email", JSON.stringify(data.email));
         localStorage.setItem("avatar", JSON.stringify(data.avatar));
