@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const newAvatarUrl = document.getElementById("imgURL").value;
 
+    console.log("Avatar: " + newAvatarUrl);
+
     try {
       await updateAvatar(profileId, newAvatarUrl);
     } catch (error) {
