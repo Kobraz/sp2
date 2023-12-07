@@ -7,8 +7,12 @@ document.getElementById("form").addEventListener("submit", async function (event
   event.preventDefault();
 
   const newAvatarUrl = document.getElementById("imgURL").value;
+
   const profileIdFromLocalStorage = localStorage.getItem("name");
   const profileId = profileIdFromLocalStorage.slice(1, -1);
+
+  console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
+  console.log("ProfileID (sliced): " + profileId);
 
   console.log("Avatar: " + newAvatarUrl);
 
@@ -49,8 +53,8 @@ async function updateAvatar(profileId, newAvatarUrl) {
   }
 }
 
-console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
-console.log("ProfileID (sliced): " + profileId);
+/* console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
+console.log("ProfileID (sliced): " + profileId); */
 
 console.log("Token: " + accessToken);
 
