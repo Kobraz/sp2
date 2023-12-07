@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to handle form submission
-  document.getElementById("form").addEventListener("submit", async function (event) {
-    event.preventDefault(); // Prevent default form submission
+  const profileIdFromLocalStorage = localStorage.getItem("name");
+  const profileId = profileIdFromLocalStorage.slice(1, -1);
 
-    // Get the value from the imgURL input field
+  document.getElementById("form").addEventListener("submit", async function (event) {
+    event.preventDefault();
+
     const newAvatarUrl = document.getElementById("imgURL").value;
 
     try {
-      // Call the updateAvatar function with the obtained URL
       await updateAvatar(profileId, newAvatarUrl);
     } catch (error) {
       console.error("Error updating avatar:", error);
-      // Handle errors here
     }
   });
 
@@ -38,10 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Replace profileId with the actual profile ID
-  const profileIdFromLocalStorage = localStorage.getItem("name");
-  const profileId = profileIdFromLocalStorage.slice(1, -1);
-
   console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
   console.log("ProfileID (sliced): " + profileId);
 });
+
+console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
+console.log("ProfileID (sliced): " + profileId);
