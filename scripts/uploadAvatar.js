@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   async function updateAvatar(profileId, newAvatarUrl) {
-    const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}`;
+    const url = `https://api.noroff.dev/api/v1/auction/profile/${profileId}/${imgURL}`;
 
     try {
       const response = await fetch(url, {
