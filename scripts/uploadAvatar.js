@@ -41,4 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Replace profileId with the actual profile ID
   const profileIdFromLocalStorage = localStorage.getItem("name");
   const profileId = profileIdFromLocalStorage.slice(1, -1);
+
+  console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
+  console.log("ProfileID (sliced): " + profileId);
 });
