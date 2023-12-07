@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 console.log("ProfileIDFromLocalStorage: " + profileIdFromLocalStorage);
-console.log("ProfileID (sliced): " + profileId);
+console.log("ProfileID (sliced)_: " + profileId);
 
 /*-----------------------------------------------------------*/
 /* 
