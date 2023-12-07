@@ -11,14 +11,15 @@
     />
     <link rel="stylesheet" href="./styles/dashboard.css" />
     <link rel="stylesheet" href="./styles/loading.css" />
-    <title>Auction Site</title>
+    <title>Auction Site | Profile Page</title>
     <script src="./scripts/dashboard.js" defer></script>
     <script src="./scripts/hamburger.js" defer></script>
-    <script src="./scripts/listings.js"></script>
     <script src="./scripts/loading.js"></script>
     <script src="./scripts/logoff.js"></script>
+    <script src="./scripts/uploadAvatar.js"></script>
   </head>
   <body>
+    /api/v1/auction/profiles/{name}/media
     <header>
       <div class="top-section">
         <h1>Auction Site</h1>
@@ -53,44 +54,18 @@
     </header>
 
     <main>
-      <div class="loading"></div>
-      <div class="cardHolder" id="cardHolder">
-        <!-- <div class="card" id="card">
-          <h2 id="cardHeader">Header</h2>
-          <p id="cardId">Id</p>
-          <p id="cardDescription">Description</p>
-          <p id="cardMedia">Media</p>
-          <p id="cardTags">Tags</p>
-          <p id="cardCreated">Created</p>
-          <p id="cardUpdated">Updated</p>
-        </div> -->
+      <div class="container">
+        <div class="form-box">
+          <h1 id="title">Upload new avatar</h1>
+          <form id="form">
+            <label class="label" for="imgURL">Avatar URL</label>
+            <i class="fa-solid fa-image"></i>
+            <input id="imgURL" name="imgURL" type="text" placeholder="Paste the URL here" />
+
+            <button id="loginButton" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
-
-      <!-- <div class="card">
-        <h2>Card Title</h2>
-        <p>Card content</p>
-      </div>
-
-      <div class="card">
-        <h2>Card Title</h2>
-        <p>Card content</p>
-      </div> -->
-
-      <!-- <div class="container">
-        <table class="table">
-          <thead class="tableHead">
-            <tr>
-              <th scope="col">Title</th>
-              <th scope="col">Description</th>
-              <th scope="col">Media</th>
-              <th scope="col">Tags</th>
-              <th scope="col">Created</th>
-              <th scope="col">Updated</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody"></tbody>
-        </table>
-      </div> -->
     </main>
 
     <footer>
