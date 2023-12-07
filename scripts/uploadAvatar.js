@@ -23,9 +23,9 @@ async function updateAvatar(profileId, newAvatarUrl) {
   const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}/media`;
   const accessToken = localStorage.getItem("accessToken");
 
-  const profileIdFromLocalStorage = localStorage.getItem("name");
+  /*   const profileIdFromLocalStorage = localStorage.getItem("name");
   const profileId = profileIdFromLocalStorage.slice(1, -1);
-
+ */
   try {
     const response = await fetch(url, {
       method: "PUT",
