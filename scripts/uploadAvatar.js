@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const profileIdFromLocalStorage = localStorage.getItem("name");
   const profileId = profileIdFromLocalStorage.slice(1, -1);
+  const accessToken = localStorage.getItem("accessToken");
 
   document.getElementById("form").addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const response = await fetch(url, {
         method: "PUT",
         headers: {
+          'Authorization': `Bearer ${accessToken}`
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ avatar: newAvatarUrl }),
