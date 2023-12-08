@@ -60,6 +60,8 @@ async function updateAvatar(profileId, newAvatarUrl) {
 
     const result = await response.json();
     console.log("Avatar updated successfully:", result);
+
+    console.log("aaaavatar... " + newAvatarUrl);
   } catch (error) {
     throw new Error(`Error updating avatar: ${error.message}`);
   }
