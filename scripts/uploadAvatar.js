@@ -63,6 +63,7 @@ async function updateAvatar(profileId, newAvatarUrl) {
 
     console.log("aaaavatar... " + newAvatarUrl);
     localStorage.setItem("avatar", JSON.stringify(newAvatarUrl));
+    window.location.reload();
   } catch (error) {
     throw new Error(`Error updating avatar: ${error.message}`);
   }
