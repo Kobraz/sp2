@@ -29,6 +29,8 @@ async function updateAvatar(profileId, newAvatarUrl) {
 
   console.log("Token: " + accessToken);
 
+  console.log("URL: " + url);
+
   try {
     const response = await fetch(url, {
       method: "PUT",
