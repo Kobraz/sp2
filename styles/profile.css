@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-/* .container {
+.container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(50, 0, 0, 0.7)), url(/image/bg.jpg);
+  /* background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(50, 0, 0, 0.7)), url(/image/bg.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   position: relative;
-} */
+}
 
 .cardHolder {
   max-width: 90%;
