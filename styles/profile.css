@@ -91,3 +91,22 @@ button {
 button:hover {
   background: #953232;
 }
+
+input {
+  text-align: center;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+  margin-bottom: 15px;
+  background: #eaeaea;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: rgb(130, 130, 130);
+}
