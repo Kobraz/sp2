@@ -25,7 +25,8 @@ document.getElementById("form").addEventListener("submit", async function (event
 
 async function updateAvatar(profileId, newAvatarUrl) {
   const url = `https://api.noroff.dev/api/v1/auction/profiles/${profileId}/media`;
-  const accessToken = localStorage.getItem("accessToken");
+  const token = localStorage.getItem("accessToken");
+  const accessToken = token.slice(1, -1);
 
   console.log("Token: " + accessToken);
 
