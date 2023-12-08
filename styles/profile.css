@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(50, 0, 0, 0.7), rgba(50, 0, 0, 0.7)), url(/image/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #461919;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: "";
+  width: 40px;
+  height: 6px;
+  border-radius: 10px;
+  background: #461919;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+form p {
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a {
+  text-decoration: none;
+  color: #461919;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #461919;
+  position: relative;
+}
+
+button {
+  font-size: 18px;
+  flex-basis: 48%;
+  background: #461919;
+  color: #fff;
+  height: 40px;
+  width: 80px;
+  border-radius: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #953232;
+}
