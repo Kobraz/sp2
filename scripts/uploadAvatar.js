@@ -53,6 +53,8 @@ async function updateAvatar(profileId, newAvatarUrl) {
 
       console.log(`HTTP error: ${response.status}`);
 
+      console.log("Avatar update failed, check the URL of the avatar.");
+
       return;
     }
 
