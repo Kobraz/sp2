@@ -9,6 +9,24 @@
   position: relative;
 }
 
+.cardHolder {
+  max-width: 90%;
+}
+
+.card {
+  background-color: var(--primary-grayColor);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: black;
+  padding: 20px;
+  max-width: 100%;
+  margin: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 .form-box {
   width: 90%;
   max-width: 450px;
