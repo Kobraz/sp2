@@ -1,5 +1,10 @@
 const formData = new FormData(document.getElementById("form").value);
 
+const token = localStorage.getItem("accessToken");
+const accessToken = token.slice(1, -1);
+
+console.log("Token: " + accessToken);
+
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission
 
@@ -26,6 +31,7 @@ formData.forEach((value, key) => {
 fetch("https://api.noroff.dev/api/v1/auction/listings", {
   method: "POST",
   headers: {
+    Authorization: `Bearer ${accessToken}`,
     "Content-Type": "application/json",
   },
   body: JSON.stringify(jsonFormData),
