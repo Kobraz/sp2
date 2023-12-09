@@ -1,4 +1,4 @@
-const formData = new FormData(document.getElementById("form"));
+/* const formData = new FormData(document.getElementById("form")); */
 
 const token = localStorage.getItem("accessToken");
 const accessToken = token.slice(1, -1);
@@ -6,6 +6,8 @@ const accessToken = token.slice(1, -1);
 console.log("Token: " + accessToken);
 
 document.getElementById("form").addEventListener("submit", function (event) {
+  const formData = new FormData(document.getElementById("form"));
+
   event.preventDefault();
 
   for (const entry of formData.entries()) {
@@ -28,7 +30,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     console.log("jsonFormData:.. ", jsonFormData);
   });
 
-  console.log("jsonFormData: " + jsonFormData);
+  /* console.log("jsonFormData: " + jsonFormData); */
 
   fetch("https://api.noroff.dev/api/v1/auction/listings", {
     method: "POST",
