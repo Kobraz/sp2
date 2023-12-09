@@ -97,10 +97,10 @@ button:hover {
 .addImageButton {
   margin-bottom: 20px;
   font-size: 14px;
-  height: 28px;
+  /*   height: 28px;
   width: 90%;
   border-radius: 6px;
-  display: block;
+  display: block; */
 }
 
 input {
