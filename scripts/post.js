@@ -8,6 +8,17 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   const formData = new FormData(document.getElementById("form"));
 
+  /*--*/
+  console.log("jsonFormData:.. ", jsonFormData);
+
+  const endsAt = new Date(jsonFormData.endsAt);
+  const isoFormattedDate = endsAt.toISOString();
+
+  jsonFormData.endsAt = isoFormattedDate;
+
+  console.log("Updated jsonFormData:.. ", jsonFormData);
+  /*--*/
+
   const jsonFormData = {};
   for (const [key, value] of formData.entries()) {
     if (jsonFormData[key]) {
@@ -20,7 +31,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
   }
 
-  console.log("jsonFormData:.. ", jsonFormData);
+  /* console.log("jsonFormData:.. ", jsonFormData);
 
   const endsAt = new Date(jsonFormData.endsAt);
   const isoFormattedDate = endsAt.toISOString();
@@ -28,6 +39,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   jsonFormData.endsAt = isoFormattedDate;
 
   console.log("Updated jsonFormData:.. ", jsonFormData);
+ */
 
   fetch("https://api.noroff.dev/api/v1/auction/listings", {
     method: "POST",
