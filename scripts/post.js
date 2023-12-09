@@ -13,41 +13,41 @@ document.getElementById("form").addEventListener("submit", function (event) {
   }
 
   console.log(formData);
-});
 
-const jsonFormData = {};
-formData.forEach((value, key) => {
-  if (jsonFormData[key]) {
-    if (!Array.isArray(jsonFormData[key])) {
-      jsonFormData[key] = [jsonFormData[key]];
+  const jsonFormData = {};
+  formData.forEach((value, key) => {
+    if (jsonFormData[key]) {
+      if (!Array.isArray(jsonFormData[key])) {
+        jsonFormData[key] = [jsonFormData[key]];
+      }
+      jsonFormData[key].push(value);
+    } else {
+      jsonFormData[key] = value;
     }
-    jsonFormData[key].push(value);
-  } else {
-    jsonFormData[key] = value;
-  }
 
-  console.log("jsonFormData:.. ", jsonFormData);
-});
-
-console.log("jsonFormData: " + jsonFormData);
-
-fetch("https://api.noroff.dev/api/v1/auction/listings", {
-  method: "POST",
-  headers: {
-    Authorization: `Bearer ${accessToken}`,
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(jsonFormData),
-})
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok.");
-    }
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Form data successfully sent:", data);
-  })
-  .catch((error) => {
-    console.error("There was a problem sending the form data:", error);
+    console.log("jsonFormData:.. ", jsonFormData);
   });
+
+  console.log("jsonFormData: " + jsonFormData);
+
+  fetch("https://api.noroff.dev/api/v1/auction/listings", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(jsonFormData),
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Form data successfully sent:", data);
+    })
+    .catch((error) => {
+      console.error("There was a problem sending the form data:", error);
+    });
+});
