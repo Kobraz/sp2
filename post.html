@@ -70,7 +70,7 @@
             <button id="addImageButton" class="addImageButton" type="button">Add Image</button>
 
             <label class="label" for="postDeadline">Deadline date</label>
-            <input id="postDeadline" name="endsAt" type="date" />
+            <input id="postDeadline" name="endsAt" type="date" value={new Date(endsAt).toLocaleDateString('en-GB')} />
 
             <button id="loginButton" type="submit">Submit</button>
           </form>
