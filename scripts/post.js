@@ -6,7 +6,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   console.log("formData: " + formData);
 
-  const postTitle = document.getElementById("postTitle");
+  const postTitle = document.getElementById("postTitle").value;
 
   console.log("Post Title: " + postTitle);
 
