@@ -1,4 +1,4 @@
-const formData = new FormData(document.getElementById("form").value);
+const formData = new FormData(document.getElementById("form"));
 
 const token = localStorage.getItem("accessToken");
 const accessToken = token.slice(1, -1);
