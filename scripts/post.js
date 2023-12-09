@@ -1,8 +1,10 @@
+const formData;
+
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault(); // Prevent the default form submission
 
   // Get form data
-  const formData = new FormData(document.getElementById("form").value);
+  formData = new FormData(document.getElementById("form").value);
 
   console.log("formData: " + formData);
 });
