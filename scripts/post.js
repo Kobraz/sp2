@@ -8,7 +8,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   const parsedDate = new Date(endsAt).toISOString();
 
-  console.log(parsedDate);
+  console.log("parsedDate: " + parsedDate);
 
   const formData = new FormData(document.getElementById("form"));
 
