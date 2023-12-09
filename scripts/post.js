@@ -6,6 +6,10 @@ console.log("Token: " + accessToken);
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
+  const parsedDate = new Date(endsAt).toISOString();
+
+  console.log(parsedDate);
+
   const formData = new FormData(document.getElementById("form"));
 
   const jsonFormData = {};
