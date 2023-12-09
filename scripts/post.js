@@ -8,10 +8,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   const formData = new FormData(document.getElementById("form"));
 
-  const parsedDate = new formData(endsAt).toISOString();
-
-  console.log("parsedDate: " + parsedDate);
-
   const jsonFormData = {};
   for (const [key, value] of formData.entries()) {
     if (jsonFormData[key]) {
