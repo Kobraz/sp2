@@ -25,6 +25,8 @@ formData.forEach((value, key) => {
   } else {
     jsonFormData[key] = value;
   }
+
+  console.log("jsonFormData:.. ", jsonFormData);
 });
 
 console.log("jsonFormData: " + jsonFormData);
