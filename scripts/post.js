@@ -11,7 +11,9 @@ document.getElementById("form").addEventListener("submit", function (event) {
   // Get form data
   /* const formData = new FormData(document.getElementById("form").value);
    */
-  console.log("formData: " + formData);
+  for (const entry of formData.entries()) {
+    console.log(entry[0] + ": " + entry[1]);
+  }
 });
 
 // Convert FormData to JSON
