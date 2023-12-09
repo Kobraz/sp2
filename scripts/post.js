@@ -22,7 +22,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     endsAt: new Date(formData.get("endsAt")).toISOString(), // Required - Convert the date string to ISO format
   };
 
-  const jsonFormData = {};
+  jsonFormData = {};
   for (const [key, value] of formData.entries()) {
     if (jsonFormData[key]) {
       if (!Array.isArray(jsonFormData[key])) {
