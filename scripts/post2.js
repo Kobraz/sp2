@@ -56,7 +56,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   console.log("jsonFormData:.. ", jsonFormData);
 
   const endsAt = new Date(jsonFormData.endsAt);
-  const isoFormattedDate = endsAt.toISOString();
+  /* const isoFormattedDate = endsAt.toISOString(); */
 
   jsonFormData.endsAt = isoFormattedDate;
 
