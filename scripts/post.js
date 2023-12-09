@@ -6,6 +6,10 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   console.log("formData: " + formData);
 
+  const postTitle = document.getElementById("postTitle");
+
+  console.log("Post Title: " + postTitle);
+
   // Convert FormData to JSON
   const jsonFormData = {};
   formData.forEach((value, key) => {
