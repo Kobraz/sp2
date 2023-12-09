@@ -191,19 +191,19 @@ footer {
 }
 
 .postImage {
-  width: 100px;
+  /* width: 100px; */
   margin: 5px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .postImage:hover {
-  width: 300px;
+  /* width: 300px; */
 }
 
 .postImage:active,
 .postImage:focus {
-  width: 800px;
-  border: 2px solid var(--primary-redColor);
+  /* width: 800px;
+  border: 2px solid var(--primary-redColor); */
 }
 
 /* #tableBody {
