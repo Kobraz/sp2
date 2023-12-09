@@ -1,22 +1,34 @@
-/* const formData = new FormData(document.getElementById("form")); */
-
 const token = localStorage.getItem("accessToken");
 const accessToken = token.slice(1, -1);
 
 console.log("Token: " + accessToken);
 
 document.getElementById("form").addEventListener("submit", function (event) {
-  const formData = new FormData(document.getElementById("form"));
-
   event.preventDefault();
 
-  for (const entry of formData.entries()) {
-    console.log(entry[0] + ": " + entry[1]);
-  }
-
-  console.log(formData);
+  const formData = new FormData(document.getElementById("form"));
 
   const jsonFormData = {};
+  for (const [key, value] of formData.entries()) {
+    if (jsonFormData[key]) {
+      if (!Array.isArray(jsonFormData[key])) {
+        jsonFormData[key] = [jsonFormData[key]];
+      }
+      jsonFormData[key].push(value);
+    } else {
+      jsonFormData[key] = value;
+    }
+  }
+
+  console.log("jsonFormData:.. ", jsonFormData);
+
+  /* for (const entry of formData.entries()) {
+    console.log(entry[0] + ": " + entry[1]);
+  } */
+
+  /* console.log(formData); */
+
+  /* const jsonFormData = {};
   formData.forEach((value, key) => {
     if (jsonFormData[key]) {
       if (!Array.isArray(jsonFormData[key])) {
@@ -28,7 +40,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
 
     console.log("jsonFormData:.. ", jsonFormData);
-  });
+  }); */
 
   /* console.log("jsonFormData: " + jsonFormData); */
 

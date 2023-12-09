@@ -54,23 +54,23 @@
           <h1 id="title">Add new post</h1>
           <form id="form">
             <label class="label" for="postTitle">Title</label>
-            <input id="postTitle" name="postTitle" type="text" placeholder="Title" />
+            <input id="postTitle" name="title" type="text" placeholder="Title" />
 
             <label class="label" for="postDescription">Description</label>
-            <input id="postDescription" name="postDescription" type="text" placeholder="Description" />
+            <input id="postDescription" name="description" type="text" placeholder="Description" />
 
             <label class="label" for="postTags">Tags</label>
-            <input id="postTags" name="postTags" type="text" placeholder="Tags" />
+            <input id="postTags" name="tags" type="text" placeholder="Tags" />
 
             <div id="imageInputs">
               <label class="label" for="postImage">Image</label>
-              <input class="postImage" name="postImage[]" type="text" placeholder="Image URL" />
+              <input class="postImage" name="media[]" type="text" placeholder="Image URL" />
             </div>
 
             <button id="addImageButton" class="addImageButton" type="button">Add Image</button>
 
             <label class="label" for="postDeadline">Deadline date</label>
-            <input id="postDeadline" name="postDeadline" type="date" />
+            <input id="postDeadline" name="endsAt" type="date" />
 
             <button id="loginButton" type="submit">Submit</button>
           </form>
