@@ -101,7 +101,6 @@ button:hover {
   width: 90px;
   border-radius: 6px;
   display: block;
-  align: center;
   left: 50%;
   right: 50%;
 }
