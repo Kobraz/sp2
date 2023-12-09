@@ -22,27 +22,12 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   console.log("jsonFormData:.. ", jsonFormData);
 
-  /* for (const entry of formData.entries()) {
-    console.log(entry[0] + ": " + entry[1]);
-  } */
+  const endsAt = new Date(jsonFormData.endsAt);
+  const isoFormattedDate = endsAt.toISOString();
 
-  /* console.log(formData); */
+  jsonFormData.endsAt = isoFormattedDate;
 
-  /* const jsonFormData = {};
-  formData.forEach((value, key) => {
-    if (jsonFormData[key]) {
-      if (!Array.isArray(jsonFormData[key])) {
-        jsonFormData[key] = [jsonFormData[key]];
-      }
-      jsonFormData[key].push(value);
-    } else {
-      jsonFormData[key] = value;
-    }
-
-    console.log("jsonFormData:.. ", jsonFormData);
-  }); */
-
-  /* console.log("jsonFormData: " + jsonFormData); */
+  console.log("Updated jsonFormData:.. ", jsonFormData);
 
   fetch("https://api.noroff.dev/api/v1/auction/listings", {
     method: "POST",
