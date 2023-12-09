@@ -4,8 +4,26 @@ document.getElementById("form").addEventListener("submit", function (event) {
   // Get form data
   const formData = new FormData(document.getElementById("form"));
 
-  console.log("formData: " + formData.value);
-  
+  console.log("formData: " + formData);
+
+  const postTitle = document.getElementById("postTitle").value;
+  const postDescription = document.getElementById("postDescription").value;
+  const postTags = document.getElementById("postTags").value;
+  const postDeadline = document.getElementById("postDeadline").value;
+
+  console.log("Post Title: " + postTitle);
+  console.log("Post Description: " + postDescription);
+  console.log("Post Tags: " + postTags);
+  console.log("Post Deadline: " + postDeadline);
+
+  document.getElementById("addImageButton").addEventListener("click", function () {
+    // Get all input elements with class 'postImage'
+    const inputs = document.querySelectorAll(".postImage");
+
+    // Log the values of all input elements
+    inputs.forEach(function (input) {
+      console.log(input.value);
+    });
   });
 
   // Convert FormData to JSON
