@@ -27,6 +27,8 @@ formData.forEach((value, key) => {
   }
 });
 
+console.log("jsonFormData: " + jsonFormData);
+
 fetch("https://api.noroff.dev/api/v1/auction/listings", {
   method: "POST",
   headers: {
