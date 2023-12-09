@@ -11,6 +11,8 @@ document.getElementById("form").addEventListener("submit", function (event) {
   for (const entry of formData.entries()) {
     console.log(entry[0] + ": " + entry[1]);
   }
+
+  console.log(formData);
 });
 
 const jsonFormData = {};
