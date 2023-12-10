@@ -44,7 +44,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   console.log("Updated jsonFormData:.. ", jsonFormData);
   /*--*/
 
-  fetch("https://api.noroff.dev/api/v1/auction/listings", {
+  /* fetch("https://api.noroff.dev/api/v1/auction/listings", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${accessToken}`,
@@ -63,5 +63,5 @@ document.getElementById("form").addEventListener("submit", function (event) {
     })
     .catch((error) => {
       console.error("There was a problem sending the form data:", error);
-    });
+    }); */
 });
