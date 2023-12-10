@@ -1,7 +1,7 @@
 // Get the elements
 const image = document.querySelector(".popup-image");
 const popup = document.querySelector(".popup");
-const popupContent = document.querySelector(".postImageDetailed");
+const popupContent = document.querySelector(".popup-content");
 const closeBtn = document.querySelector(".close");
 
 // Function to open the popup

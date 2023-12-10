@@ -27,7 +27,7 @@ function displayItem(item) {
   let mediaHTML = "";
   if (Array.isArray(item.media)) {
     item.media.forEach((mediaUrl) => {
-      mediaHTML += `<img class="postImageDetailed" src="${mediaUrl}" alt="image">`;
+      mediaHTML += `<img class="popup-content" src="${mediaUrl}" alt="image">`;
     });
   } else {
     mediaHTML = `<img src="${item.media}" alt="image">`;
