@@ -44,6 +44,7 @@ function displayItem(item) {
        <p>Updated: ${item.updated}</p>
        <p>Ends at: ${item.endsAt}</p>
        <p>Bids: ${item._count}</p>
+       <button class="placeBid">Place bid</button>
     `;
 }
 
