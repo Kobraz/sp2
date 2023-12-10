@@ -41,6 +41,9 @@ function displayItem(item) {
        <p>${mediaHTML}</p>
        <p>${item.tags}</p>
        <p>Created: ${item.created}</p>
+       <p>Updated: ${item.updated}</p>
+       <p>Ends at: ${item.endsAt}</p>
+       <p>Bids: ${item.bids}</p>
     `;
 }
 
