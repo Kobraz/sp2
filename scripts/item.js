@@ -40,6 +40,7 @@ function displayItem(item) {
        <p>${item.description}</p>
        <p>${mediaHTML}</p>
        <p>${item.tags}</p>
+       <p>Created: ${item.created}</p>
     `;
 }
 
