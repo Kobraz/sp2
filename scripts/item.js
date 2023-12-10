@@ -27,8 +27,8 @@ function displayItem(item) {
   itemContent.innerHTML = `
        <h2 id="cardHeader">${item.title}</h2>
        <p>${item.description}</p>
-       <img src="${item.image}" alt="${item.title}">
-       <p>Price: ${item.price} kr</p>
+       <img src="${item.media}" alt="${item.title}">
+       <p>${item.tags} kr</p>
     `;
 }
 
