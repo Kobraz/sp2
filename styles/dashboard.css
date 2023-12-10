@@ -220,6 +220,25 @@ footer {
   border-radius: 10px;
 }
 
+button {
+  font-size: 18px;
+  flex-basis: 48%;
+  background: #461919;
+  color: #fff;
+  height: 40px;
+  width: 80px;
+  border-radius: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #953232;
+}
+
 /* #tableBody {
   color: black;
 }
