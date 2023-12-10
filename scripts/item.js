@@ -22,6 +22,19 @@ function fetchAndDisplayItem() {
 function displayItem(item) {
   const itemContent = document.getElementById("itemContent");
 
+  /* --- */
+
+  let mediaHTML = "";
+  if (Array.isArray(item.media)) {
+    item.media.forEach((mediaUrl) => {
+      mediaHTML += `<img class="postImage" src="${mediaUrl}" alt="image">`;
+    });
+  } else {
+    mediaHTML = `<img src="${item.media}" alt="image">`;
+  }
+
+  /* --- */
+
   itemContent.innerHTML = `
        <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
        <p>${item.description}</p>
