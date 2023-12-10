@@ -38,7 +38,7 @@ function displayItem(item) {
   itemContent.innerHTML = `
        <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
        <p>${item.description}</p>
-       <img class="postImageDetailed" src="${item.media}" alt="${item.title}">
+       <img class="postImageDetailed" src="${mediaHTML}" alt="${item.title}">
        <p>${item.tags}</p>
     `;
 }
