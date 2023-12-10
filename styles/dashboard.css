@@ -207,7 +207,7 @@ footer {
 }
 
 .postImageDetailed {
-  width: 300px;
+  height: 300px;
   margin: 5px;
   border: 1px solid black;
   border-radius: 10px;
