@@ -27,7 +27,7 @@ function displayItem(item) {
   let mediaHTML = "";
   if (Array.isArray(item.media)) {
     item.media.forEach((mediaUrl) => {
-      mediaHTML += `<img class="postImage" src="${mediaUrl}" alt="image">`;
+      mediaHTML += `<img class="postImageDetailed" src="${mediaUrl}" alt="image">`;
     });
   } else {
     mediaHTML = `<img src="${item.media}" alt="image">`;
@@ -38,7 +38,7 @@ function displayItem(item) {
   itemContent.innerHTML = `
        <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
        <p>${item.description}</p>
-       <img class="postImageDetailed" src="${mediaHTML}" alt="${item.title}">
+       <p>${mediaHTML}</p>
        <p>${item.tags}</p>
     `;
 }
