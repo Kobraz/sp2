@@ -25,7 +25,7 @@ function displayItem(item) {
   // ... code to display the item details ...
 
   itemContent.innerHTML = `
-       <h2>${item.title}</h2>
+       <h2 id="cardHeader">${item.title}</h2>
        <p>${item.description}</p>
        <img src="${item.image}" alt="${item.title}">
        <p>Price: ${item.price} kr</p>
