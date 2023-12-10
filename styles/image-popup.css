@@ -30,7 +30,7 @@
 }
 
 /* Style for the popup content (image) */
-.postImageDetailed {
+.popup-content {
   display: block;
   margin: auto;
   max-width: 80%;
