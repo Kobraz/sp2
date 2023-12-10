@@ -1,13 +1,13 @@
 const token = localStorage.getItem("accessToken");
 const accessToken = token.slice(1, -1);
-/* let jsonFormData; */
+let jsonFormData;
 
 console.log("Token: " + accessToken);
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const formData = new FormData(document.getElementById("form"));
+  /* const formData = new FormData(document.getElementById("form")); */
 
   const jsonFormData = {
     title: formData.get("title"),
