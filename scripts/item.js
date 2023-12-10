@@ -46,12 +46,12 @@ function displayItem(item) {
        <p>Bids: ${item._count}</p>
        <button class="placeBid">Place bid</button>
     `;
+
+  const placeBidButton = document.querySelector(".placeBid");
+
+  placeBidButton.addEventListener("click", function () {
+    console.log("Button Clicked");
+  });
 }
 
-/* const placeBidButton = document.querySelector(".placeBid");
-
-placeBidButton.addEventListener("click", function () {
-  console.log("Button Clicked");
-});
- */
 fetchAndDisplayItem();
