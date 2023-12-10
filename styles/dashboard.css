@@ -221,12 +221,12 @@ footer {
 }
 
 button {
-  font-size: 18px;
+  font-size: 16px;
   flex-basis: 48%;
   background: #461919;
   color: #fff;
   height: 40px;
-  width: 80px;
+  width: 120px;
   border-radius: 12px;
   border: 0;
   outline: 0;
