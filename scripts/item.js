@@ -22,13 +22,11 @@ function fetchAndDisplayItem() {
 function displayItem(item) {
   const itemContent = document.getElementById("itemContent");
 
-  // ... code to display the item details ...
-
   itemContent.innerHTML = `
-       <h2 id="cardHeader">${item.title}</h2>
+       <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
        <p>${item.description}</p>
-       <img src="${item.media}" alt="${item.title}">
-       <p>${item.tags} kr</p>
+       <img class="postImageDetailed" src="${item.media}" alt="${item.title}">
+       <p>${item.tags}</p>
     `;
 }
 

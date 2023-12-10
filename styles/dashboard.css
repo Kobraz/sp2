@@ -206,6 +206,13 @@ footer {
   border: 2px solid var(--primary-redColor);
 }
 
+.postImageDetailed {
+  width: 300px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
 /* #tableBody {
   color: black;
 }
