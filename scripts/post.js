@@ -7,7 +7,7 @@ console.log("Token: " + accessToken);
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  /* const formData = new FormData(document.getElementById("form")); */
+  const formData = new FormData(document.getElementById("form"));
 
   const jsonFormData = {
     title: formData.get("title"),
