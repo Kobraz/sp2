@@ -50,6 +50,14 @@ function populateTable(data) {
     cardUpdated.textContent = item.updated;
     card.appendChild(cardUpdated);
 
+    const cardLink = document.createElement("button");
+    cardLink.id = "cardLink";
+    cardLink.textContent = "Open Post";
+    cardLink.onclick = function () {
+      window.open(`item.html?id=${item.id}`, "_blank");
+    };
+    card.appendChild(cardLink);
+
     cardHolder.appendChild(card);
   });
 
@@ -76,7 +84,6 @@ function populateTable(data) {
   );
 }
 
-// Function to fetch data from API and populate table
 function fetchAndPopulateTable() {
   fetch("https://api.noroff.dev/api/v1/auction/listings")
     .then((data) => {
@@ -87,7 +94,6 @@ function fetchAndPopulateTable() {
     });
 }
 
-// Run fetchAndPopulateTable function when the DOM has been loaded
 document.addEventListener("DOMContentLoaded", function () {
   fetchAndPopulateTable();
 });
