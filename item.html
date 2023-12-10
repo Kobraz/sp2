@@ -3,10 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Item</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3/Sk8I+GF+qcmluWqj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+    <link rel="stylesheet" href="./styles/loading.css" />
+    <title>Auction Site</title>
+    <script src="./scripts/dashboard.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/item.js"></script>
+    <script src="./scripts/loading.js"></script>
+    <script src="./scripts/logoff.js"></script>
   </head>
   <body>
-    <div id="itemContent"></div>
-    <script src="./scripts/item.js"></script>
+    <header>
+      <div class="top-section">
+        <h1>Auction Site</h1>
+      </div>
+      <div class="bottom-section">
+        <div class="userInfo">
+          <img class="avatar" id="avatar" alt="Avatar" />
+          <div class="userDetails">
+            <p class="userName" id="userName"></p>
+            <p class="email" id="email"></p>
+            <p class="creds" id="creds">Credits: <span class="credits" id="credits"></span></p>
+          </div>
+        </div>
+        <div class="menu-dropdown">
+          <label for="menu-dropdown-toggle" class="menu-dropdown-toggle-label">
+            <i class="fas fa-caret-down"></i>
+          </label>
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+              <li class="nav-item"><a href="./post.html" class="nav-link">Post</a></li>
+              <li class="nav-item"><a href="./profile.html" class="nav-link">Profile</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="Logoff">Log off</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="loading"></div>
+      <div class="cardHolder" id="cardHolder">
+        <!-- <div class="card" id="card">
+          <h2 id="cardHeader">Header</h2>
+          <p id="cardId">Id</p>
+          <p id="cardDescription">Description</p>
+          <p id="cardMedia">Media</p>
+          <p id="cardTags">Tags</p>
+          <p id="cardCreated">Created</p>
+          <p id="cardUpdated">Updated</p>
+        </div> -->
+      </div>
+
+      <!-- <div class="card">
+        <h2>Card Title</h2>
+        <p>Card content</p>
+      </div>
+
+      <div class="card">
+        <h2>Card Title</h2>
+        <p>Card content</p>
+      </div> -->
+
+      <!-- <div class="container">
+        <table class="table">
+          <thead class="tableHead">
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Description</th>
+              <th scope="col">Media</th>
+              <th scope="col">Tags</th>
+              <th scope="col">Created</th>
+              <th scope="col">Updated</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div> -->
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2023 Auction Site. All rights reserved.</p>
+    </footer>
   </body>
 </html>
