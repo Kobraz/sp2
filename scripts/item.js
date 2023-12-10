@@ -31,7 +31,7 @@ function fetchAndDisplayItem() {
 }
 
 function displayItem(item) {
-  const itemContent = document.getElementById("cardHolder");
+  const itemContent = document.getElementById("itemContent");
 
   // ... code to display the item details ...
 
