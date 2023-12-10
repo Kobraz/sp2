@@ -16,13 +16,12 @@ function fetchAndDisplayItem() {
     })
     .then((objectData) => {
       displayItem(objectData);
+      addBidEventListener(); // Adding event listener after displaying the item
     });
 }
 
 function displayItem(item) {
   const itemContent = document.getElementById("itemContent");
-
-  /* --- */
 
   let mediaHTML = "";
   if (Array.isArray(item.media)) {
@@ -33,19 +32,26 @@ function displayItem(item) {
     mediaHTML = `<img src="${item.media}" alt="image">`;
   }
 
-  /* --- */
-
   itemContent.innerHTML = `
-       <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
-       <p>${item.description}</p>
-       <p>${mediaHTML}</p>
-       <p>${item.tags}</p>
-       <p>Created: ${item.created}</p>
-       <p>Updated: ${item.updated}</p>
-       <p>Ends at: ${item.endsAt}</p>
-       <p>Bids: ${item._count}</p>
-       <button class="placeBid">Place bid</button>
-    `;
+         <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
+         <p>${item.description}</p>
+         <p>${mediaHTML}</p>
+         <p>${item.tags}</p>
+         <p>Created: ${item.created}</p>
+         <p>Updated: ${item.updated}</p>
+         <p>Ends at: ${item.endsAt}</p>
+         <p>Bids: ${item._count}</p>
+         <button class="placeBid">Place bid</button>
+      `;
+}
+
+function addBidEventListener() {
+  const placeBidButton = document.querySelector(".placeBid");
+
+  placeBidButton.addEventListener("click", function () {
+    console.log("Button Clicked");
+    // Add your bid logic here
+  });
 }
 
 fetchAndDisplayItem();
