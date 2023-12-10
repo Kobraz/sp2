@@ -1,16 +1,5 @@
 function getParameterByName(name, url = window.location.href) {
-  name = name.replace(/[\[\]]/g, "\\$&");Avatar
-Roar
-
-RoaHan10771@stud.noroff.no
-
-Credits: 1000
-
-Dashboard
-Post
-Profile
-Log off
-
+  name = name.replace(/[\[\]]/g, "\\$&");
   const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
     results = regex.exec(url);
   if (!results) return null;
