@@ -213,6 +213,13 @@ footer {
   border-radius: 10px;
 }
 
+.popup-image {
+  height: 300px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 /* #tableBody {
   color: black;
 }
