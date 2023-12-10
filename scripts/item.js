@@ -1,5 +1,16 @@
 function getParameterByName(name, url = window.location.href) {
-  name = name.replace(/[\[\]]/g, "\\$&");
+  name = name.replace(/[\[\]]/g, "\\$&");Avatar
+Roar
+
+RoaHan10771@stud.noroff.no
+
+Credits: 1000
+
+Dashboard
+Post
+Profile
+Log off
+
   const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
     results = regex.exec(url);
   if (!results) return null;
@@ -20,7 +31,7 @@ function fetchAndDisplayItem() {
 }
 
 function displayItem(item) {
-  const itemContent = document.getElementById("itemContent");
+  const itemContent = document.getElementById("cardHolder");
 
   // ... code to display the item details ...
 
