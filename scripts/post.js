@@ -10,19 +10,18 @@ document.getElementById("form").addEventListener("submit", function (event) {
   const formData = new FormData(document.getElementById("form"));
 
   const jsonFormData = {
-    title: formData.get("title"), // Required
-    description: formData.get("description"), // Optional
+    title: formData.get("title"),
+    description: formData.get("description"),
     tags: formData.get("tags")
       ? formData
           .get("tags")
           .split(",")
           .map((tag) => tag.trim())
-      : [], // Optional - Convert comma-separated string to an array of tags
-    media: formData.get("media") ? [formData.get("media")] : [], // Optional - Place the media URL in an array if provided
-    endsAt: new Date(formData.get("endsAt")).toISOString(), // Required - Convert the date string to ISO format
+      : [],
+    media: formData.get("media") ? [formData.get("media")] : [],
+    endsAt: new Date(formData.get("endsAt")).toISOString(),
   };
 
-  /* const jsonFormData = {}; */
   for (const [key, value] of formData.entries()) {
     if (jsonFormData[key]) {
       if (!Array.isArray(jsonFormData[key])) {
