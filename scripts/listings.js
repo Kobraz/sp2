@@ -85,7 +85,7 @@ function populateTable(data) {
 }
 
 function fetchAndPopulateTable() {
-  fetch("https://api.noroff.dev/api/v1/auction/listings")
+  fetch("https://api.noroff.dev/api/v1/auction/listings?sort=created")
     .then((data) => {
       return data.json();
     })
