@@ -99,12 +99,15 @@ function placeBid() {
           .then((response) => {
             if (response.ok) {
               console.log("Bid placed successfully!");
+              messageSuccess();
             } else {
               console.log("Failed to place bid");
+              messageFailed();
             }
           })
           .catch((error) => {
             console.error("Error occurred:", error);
+            messageError();
           });
       } else {
         console.log("You can't bid 0");
@@ -113,6 +116,8 @@ function placeBid() {
     });
   });
 }
+
+// Messages
 
 function messageErrorNull() {
   var spanTags = document.querySelectorAll("span.import, span.style");
@@ -126,12 +131,78 @@ function messageErrorNull() {
   }
 
   function showMessage() {
-    var messageBox = document.getElementById("message");
+    var messageBox = document.getElementById("messageErrorNull");
     messageBox.style.display = "block";
   }
 
   function hideMessage() {
-    var messageBox = document.getElementById("message");
+    var messageBox = document.getElementById("messageErrorNull");
+    messageBox.style.display = "none";
+  }
+}
+
+function messageSuccess() {
+  var spanTags = document.querySelectorAll("span.import, span.style");
+  for (var i = 0; i < spanTags.length; i++) {
+    spanTags[i].addEventListener("click", function () {
+      copyText(this.textContent);
+
+      showMessage();
+      setTimeout(hideMessage, 2000);
+    });
+  }
+
+  function showMessage() {
+    var messageBox = document.getElementById("messageSuccess");
+    messageBox.style.display = "block";
+  }
+
+  function hideMessage() {
+    var messageBox = document.getElementById("messageSuccess");
+    messageBox.style.display = "none";
+  }
+}
+
+function messageFailed() {
+  var spanTags = document.querySelectorAll("span.import, span.style");
+  for (var i = 0; i < spanTags.length; i++) {
+    spanTags[i].addEventListener("click", function () {
+      copyText(this.textContent);
+
+      showMessage();
+      setTimeout(hideMessage, 2000);
+    });
+  }
+
+  function showMessage() {
+    var messageBox = document.getElementById("messageFailed");
+    messageBox.style.display = "block";
+  }
+
+  function hideMessage() {
+    var messageBox = document.getElementById("messageFailed");
+    messageBox.style.display = "none";
+  }
+}
+
+function messageError() {
+  var spanTags = document.querySelectorAll("span.import, span.style");
+  for (var i = 0; i < spanTags.length; i++) {
+    spanTags[i].addEventListener("click", function () {
+      copyText(this.textContent);
+
+      showMessage();
+      setTimeout(hideMessage, 2000);
+    });
+  }
+
+  function showMessage() {
+    var messageBox = document.getElementById("messageError");
+    messageBox.style.display = "block";
+  }
+
+  function hideMessage() {
+    var messageBox = document.getElementById("messageError");
     messageBox.style.display = "none";
   }
 }
