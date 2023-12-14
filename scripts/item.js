@@ -34,6 +34,7 @@ function displayItem(item) {
 
   itemContent.innerHTML = `
          <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
+         <p>${item.id}</p>
          <p>${item.description}</p>
          <p>${mediaHTML}</p>
          <p>${item.tags}</p>
