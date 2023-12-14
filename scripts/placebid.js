@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   placeBidButton.addEventListener("click", () => {
     const bidInput = document.querySelector(".bid");
-    const itemId = item.id; // Replace 'your_item_id' with the actual item ID
+    const itemId = item.id;
 
     // Get the bid value from the input
     const bidValue = parseFloat(bidInput.value);
