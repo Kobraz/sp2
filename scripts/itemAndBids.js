@@ -208,6 +208,7 @@ function messageError() {
 } */
 
 main();
+messageErrorNull();
 
 /* fetchAndDisplayItem();
 placeBid(); */
