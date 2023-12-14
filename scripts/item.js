@@ -34,14 +34,14 @@ function displayItem(item) {
 
   itemContent.innerHTML = `
          <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
-         <p>${item.id}</p>
+         <p class="cardId">${item.id}</p>
          <p>${item.description}</p>
          <p>${mediaHTML}</p>
          <p>${item.tags}</p>
-         <p>Created: ${item.created}</p>
-         <p>Updated: ${item.updated}</p>
-         <p>Ends at: ${item.endsAt}</p>
-         <p>Bids: ${item._count}</p>
+         <p><span class="textCont">Created: </span>${item.created}</p>
+         <p><span class="textCont">Updated: </span>${item.updated}</p>
+         <p><span class="textCont">Ends at: </span>${item.endsAt}</p>
+         <p><span class="textCont">Bids: </span>${item._count}</p>
          <label for="bid">Enter bid: </label><input type="number" id="bid" class="bid" name="bid" min="0" max="1000"><button class="placeBid">Place bid</button>
       `;
 }
