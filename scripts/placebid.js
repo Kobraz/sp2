@@ -1,22 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
   const placeBidButton = document.querySelector(".placeBid");
+  const bidInput = document.querySelector("#bid"); // Updated query selector for the bid input
 
   placeBidButton.addEventListener("click", () => {
-    const bidInput = document.querySelector(".bid");
-    const itemId = item.id;
-
-    // Get the bid value from the input
+    const itemId = item.id; // Assuming item is declared and holds the ID of the auction item
     const bidValue = parseFloat(bidInput.value);
 
-    // Check if the bid value is more than 0
     if (bidValue > 0) {
-      // Make the POST request to the API
+      const accessToken = localStorage.getItem("accessToken");
+      const buyerInfo = {
+        email: localStorage.getItem("email"),
+        name: localStorage.getItem("name"),
+        // Possibly include more buyer details here
+      };
+
+      // Create the payload including bid amount and buyer information
+      const requestBody = {
+        amount: bidValue,
+        buyer: buyerInfo,
+      };
+
+      // Make the POST request to the API with authentication headers
       fetch(`https://api.noroff.dev/api/v1/auction/listings/${itemId}/bids`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${accessToken}`, // Add the access token for authentication
         },
-        body: JSON.stringify({ bid: bidValue }),
+        body: JSON.stringify(requestBody),
       })
         .then((response) => {
           if (response.ok) {
@@ -34,6 +45,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-const queryString = window.location.search;
-console.log("queryString: " + queryString);
