@@ -179,13 +179,55 @@ li a {
 
 #cardId {
   font-family: "Smooch Sans", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #cardDescription {
   font-family: "Exo 2", sans-serif;
   font-size: 18px;
 }
+
+#cardTags {
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+#cardCreated {
+  font-family: "Exo 2", sans-serif;
+  font-size: 12px;
+}
+
+/* #cardCreated::before {
+  content: "Created: ";
+  font-weight: bold;
+} */
+
+#cardUpdated {
+  font-family: "Exo 2", sans-serif;
+  font-size: 12px;
+}
+
+/* #cardUpdated::before {
+  content: "Updated: ";
+  font-weight: bold;
+} */
+
+#cardEndsAt {
+  font-family: "Exo 2", sans-serif;
+  font-size: 12px;
+}
+
+/* #cardEndsAt::before {
+  content: "Ends at: ";
+  font-weight: bold;
+} */
 
 footer {
   position: fixed;

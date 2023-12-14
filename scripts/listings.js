@@ -41,14 +41,22 @@ function populateTable(data) {
     card.appendChild(cardTags);
 
     const cardCreated = document.createElement("p");
+    const createdTextcre = "Created: ";
     cardCreated.id = "cardCreated";
-    cardCreated.textContent = item.created;
+    cardCreated.textContent = createdTextcre + item.created;
     card.appendChild(cardCreated);
 
     const cardUpdated = document.createElement("p");
+    const createdTextupd = "Updated: ";
     cardUpdated.id = "cardUpdated";
-    cardUpdated.textContent = item.updated;
+    cardUpdated.textContent = createdTextupd + item.updated;
     card.appendChild(cardUpdated);
+
+    const cardEndsAt = document.createElement("p");
+    const createdTextends = "Ends at: ";
+    cardEndsAt.id = "cardEndsAt";
+    cardUpdated.textContent = createdTextends + item.endsAt;
+    card.appendChild(cardEndsAt);
 
     const cardLink = document.createElement("button");
     cardLink.id = "cardLink";
