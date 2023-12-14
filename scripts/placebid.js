@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const placeBidButton = document.querySelector(".placeBid");
-  const bidInput = document.querySelector(".bid");
+  const bidInput = document.querySelector(".bidAmount");
   console.log(placeBidButton);
   console.log(bidInput);
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Query String Sliced:", queryStringSliced);
 
   placeBidButton.addEventListener("click", () => {
-    const itemId = queryStringSliced; // Assuming item is declared and holds the ID of the auction item
+    const itemId = queryStringSliced;
     const bidValue = parseFloat(bidInput.value);
 
     if (bidValue > 0) {
@@ -18,28 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
       const buyerInfo = {
         email: localStorage.getItem("email"),
         name: localStorage.getItem("name"),
-        // Possibly include more buyer details here
       };
 
-      // Create the payload including bid amount and buyer information
       const requestBody = {
         amount: bidValue,
         buyer: buyerInfo,
       };
 
-      // Make the POST request to the API with authentication headers
       fetch(`https://api.noroff.dev/api/v1/auction/listings/${itemId}/bids`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`, // Add the access token for authentication
+          Authorization: `Bearer ${accessToken}`, //
         },
         body: JSON.stringify(requestBody),
       })
         .then((response) => {
           if (response.ok) {
             console.log("Bid placed successfully!");
-            // Handle further actions if needed
           } else {
             console.log("Failed to place bid");
           }
