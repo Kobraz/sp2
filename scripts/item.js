@@ -41,7 +41,7 @@ function displayItem(item) {
          <p>Updated: ${item.updated}</p>
          <p>Ends at: ${item.endsAt}</p>
          <p>Bids: ${item._count}</p>
-         <input type="number" id="bid" class="bid" name="bid" min="0" max="1000"><button class="placeBid">Place bid</button>
+         <label for="bid">Enter bid</label><input type="number" id="bid" class="bid" name="bid" min="0" max="1000"><button class="placeBid">Place bid</button>
       `;
 }
 
