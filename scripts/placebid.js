@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const placeBidButton = document.querySelector(".placeBid");
 
-  placeBidButton.addEventListener("placeBid", () => {
+  placeBidButton.addEventListener("click", () => {
     const bidInput = document.querySelector(".bid");
     const itemId = item.id;
 

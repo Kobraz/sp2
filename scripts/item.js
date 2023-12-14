@@ -42,7 +42,7 @@ function displayItem(item) {
          <p class="cardUpdated"><span class="textCont">Updated: </span>${item.updated}</p>
          <p class="cardEndsAt"><span class="textCont">Ends at: </span>${item.endsAt}</p>
          <p class="cardBids"><span class="textCont">Bids: </span>${item._count}</p>
-         <label for="bid">Enter bid: </label><input type="number" id="bid" class="bid" name="bid" min="0" max="1000"><button class="placeBid">Place bid</button>
+         <label for="bid">Enter bid: </label><input type="number" id="bid" class="bid" name="bid" min="0" max="1000"><button id="placeBid" class="placeBid">Place bid</button>
       `;
 }
 
