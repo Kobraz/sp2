@@ -108,9 +108,32 @@ function placeBid() {
           });
       } else {
         console.log("You can't bid 0");
+        messageErrorNull();
       }
     });
   });
+}
+
+function messageErrorNull() {
+  var spanTags = document.querySelectorAll("span.import, span.style");
+  for (var i = 0; i < spanTags.length; i++) {
+    spanTags[i].addEventListener("click", function () {
+      copyText(this.textContent);
+
+      showMessage();
+      setTimeout(hideMessage, 2000);
+    });
+  }
+
+  function showMessage() {
+    var messageBox = document.getElementById("message");
+    messageBox.style.display = "block";
+  }
+
+  function hideMessage() {
+    var messageBox = document.getElementById("message");
+    messageBox.style.display = "none";
+  }
 }
 
 main();
