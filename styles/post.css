@@ -27,8 +27,9 @@ header {
   width: 100%;
   padding: 20px 0;
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
   background-color: var(--primary-redColor);
+  z-index: 100;
 }
 
 main {
