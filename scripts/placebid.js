@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const placeBidButton = document.querySelector(".placeBid");
-  const bidInput = document.querySelector("#bid"); // Updated query selector for the bid input
-  console.log(placeBidButton); // Log to check if the element is found
-  console.log(bidInput); // Log to check if the element is found
+  const bidInput = document.querySelector(".bid");
+  console.log(placeBidButton);
+  console.log(bidInput);
 
   const queryString = window.location.search;
   const queryStringSliced = queryString.slice(4);
