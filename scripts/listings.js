@@ -54,9 +54,9 @@ function populateTable(data) {
 
     const justNow = new Date();
     if (item.endsAt < justNow) {
-      const itemStatus = "Ended";
+      let itemStatus = "Ended";
     } else {
-      const itemStatus = "Active";
+      let itemStatus = "Active";
     }
 
     const cardEndsAt = document.createElement("p");
