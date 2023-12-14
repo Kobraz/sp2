@@ -35,13 +35,13 @@ function displayItem(item) {
   itemContent.innerHTML = `
          <h2 id="cardHeader" class="cardHeader">${item.title}</h2>
          <p class="cardId">${item.id}</p>
-         <p>${item.description}</p>
-         <p>${mediaHTML}</p>
-         <p>${item.tags}</p>
-         <p><span class="textCont">Created: </span>${item.created}</p>
-         <p><span class="textCont">Updated: </span>${item.updated}</p>
-         <p><span class="textCont">Ends at: </span>${item.endsAt}</p>
-         <p><span class="textCont">Bids: </span>${item._count}</p>
+         <p class="cardDescription">${item.description}</p>
+         <p class="cardMedia">${mediaHTML}</p>
+         <p class="cardTags">${item.tags}</p>
+         <p class="cardCreated"><span class="textCont">Created: </span>${item.created}</p>
+         <p class="cardUpdated"><span class="textCont">Updated: </span>${item.updated}</p>
+         <p class="cardEndsAt"><span class="textCont">Ends at: </span>${item.endsAt}</p>
+         <p class="cardBids"><span class="textCont">Bids: </span>${item._count}</p>
          <label for="bid">Enter bid: </label><input type="number" id="bid" class="bid" name="bid" min="0" max="1000"><button class="placeBid">Place bid</button>
       `;
 }
