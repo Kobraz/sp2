@@ -51,7 +51,6 @@ function displayItem(item) {
 
   placeBidButton.addEventListener("click", function () {
     console.log("Button Clicked");
-    // Add your bid logic here
   });
 } */
 
