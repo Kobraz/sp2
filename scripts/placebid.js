@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Query String Sliced:", queryStringSliced);
 
   placeBidButton.addEventListener("click", () => {
+    //noe er feil her...
     const itemId = queryStringSliced;
     const bidValue = parseFloat(bidInput.value);
 

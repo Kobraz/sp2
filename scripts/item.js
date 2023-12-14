@@ -16,7 +16,7 @@ function fetchAndDisplayItem() {
     })
     .then((objectData) => {
       displayItem(objectData);
-      addBidEventListener(); // Adding event listener after displaying the item
+      /* addBidEventListener(); // Refererer til utkommentert kodeblokk nederst */
     });
 }
 
