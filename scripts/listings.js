@@ -52,17 +52,17 @@ function populateTable(data) {
     cardUpdated.textContent = createdTextupd + item.updated;
     card.appendChild(cardUpdated);
 
-    const justNow = new Date();
+    /* const justNow = new Date();
     if (item.endsAt < justNow) {
       let itemStatus = "Ended";
     } else {
       let itemStatus = "Active";
-    }
+    } */
 
     const cardEndsAt = document.createElement("p");
     const createdTextends = "Ends at: ";
     cardEndsAt.id = "cardEndsAt";
-    cardUpdated.textContent = createdTextends + item.endsAt + itemStatus;
+    cardUpdated.textContent = createdTextends + item.endsAt;
     card.appendChild(cardEndsAt);
 
     const cardLink = document.createElement("button");
