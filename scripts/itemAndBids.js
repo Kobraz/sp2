@@ -81,6 +81,7 @@ function placeBid() {
           email: localStorage.getItem("email"),
           name: localStorage.getItem("name"),
         };
+        console.log("accessToken: " + accessToken);
 
         const requestBody = {
           amount: bidValue,
