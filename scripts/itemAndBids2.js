@@ -65,8 +65,8 @@ function placeBid() {
     const bidInput = document.querySelector(".bidAmount");
     console.log(placeBidButton);
     console.log(bidInput);
-    console.log(document.getElementById("placeBid"));
-    console.log(document.getElementById("bidAmount"));
+    console.log(document.querySelector(".placeBid"));
+    console.log(document.querySelector(".bidAmount"));
 
     const queryString = window.location.search;
     const queryStringSliced = queryString.slice(4);
