@@ -61,8 +61,8 @@ function addBidEventListener() {
 
 function placeBid() {
   document.addEventListener("DOMContentLoaded", () => {
-    const placeBidButton = document.getElementById("placeBid");
-    const bidInput = document.getElementById("bidAmount");
+    const placeBidButton = document.querySelector(".placeBid");
+    const bidInput = document.querySelector(".bidAmount");
     console.log(placeBidButton);
     console.log(bidInput);
     console.log(document.getElementById("placeBid"));
