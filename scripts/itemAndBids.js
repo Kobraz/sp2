@@ -21,7 +21,7 @@ function fetchAndDisplayItem() {
     })
     .then((objectData) => {
       displayItem(objectData);
-      /* addBidEventListener(); // Refererer til utkommentert kodeblokk linje 49 */
+      /* addBidEventListener(); // Refererer til utkommentert kodeblokk function addBidEventListener() */
     });
 }
 
@@ -141,7 +141,7 @@ function messageErrorNull() {
   }
 }
 
-function messageSuccess() {
+/* function messageSuccess() {
   var spanTags = document.querySelectorAll("span.import, span.style");
   for (var i = 0; i < spanTags.length; i++) {
     spanTags[i].addEventListener("click", function () {
@@ -205,7 +205,7 @@ function messageError() {
     var messageBox = document.getElementById("messageError");
     messageBox.style.display = "none";
   }
-}
+} */
 
 main();
 messageErrorNull();
