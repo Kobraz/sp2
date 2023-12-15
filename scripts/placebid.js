@@ -8,6 +8,8 @@ function addBidEventListener() {
 
     console.log("ItemId: " + itemId);
     console.log("bidAmount: " + bidAmount);
+    console.log("ItemId: " + getParameterByName("id"));
+    console.log("bidAmount: " + bidAmountInput.value);
 
     if (!bidAmount || bidAmount <= 0) {
       alert("Please enter a valid bid amount!");
