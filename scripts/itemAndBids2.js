@@ -51,13 +51,13 @@ function displayItem(item) {
         `;
 }
 
-/* function addBidEventListener() {
-    const placeBidButton = document.querySelector(".placeBid");
-  
-    placeBidButton.addEventListener("click", function () {
-      console.log("Button Clicked");
-    });
-  } */
+function addBidEventListener() {
+  const placeBidButton = document.querySelector(".placeBid");
+
+  placeBidButton.addEventListener("click", function () {
+    console.log("Button Clicked");
+  });
+}
 
 function placeBid() {
   document.addEventListener("DOMContentLoaded", () => {
