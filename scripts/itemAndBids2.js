@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", () {
-
-
-});
-
 async function main() {
   await fetchAndDisplayItem();
   placeBid();
