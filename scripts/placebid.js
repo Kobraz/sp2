@@ -1,50 +1,43 @@
-document.addEventListener("DOMContentLoaded", () => {
+function addBidEventListener() {
   const placeBidButton = document.querySelector(".placeBid");
-  const bidInput = document.querySelector(".bidAmount");
-  console.log(placeBidButton);
-  console.log(bidInput);
+  const bidAmountInput = document.querySelector(".bidAmount");
 
-  const queryString = window.location.search;
-  const queryStringSliced = queryString.slice(4);
-  console.log("Query String:", queryString);
-  console.log("Query String Sliced:", queryStringSliced);
+  placeBidButton.addEventListener("click", function () {
+    const itemId = getParameterByName("id");
+    const bidAmount = bidAmountInput.value;
 
-  placeBidButton.addEventListener("click", () => {
-    const itemId = queryStringSliced;
-    const bidValue = parseFloat(bidInput.value);
-
-    if (bidValue > 0) {
-      const accessToken = localStorage.getItem("accessToken");
-      const buyerInfo = {
-        email: localStorage.getItem("email"),
-        name: localStorage.getItem("name"),
-      };
-
-      const requestBody = {
-        amount: bidValue,
-        buyer: buyerInfo,
-      };
-
-      fetch(`https://api.noroff.dev/api/v1/auction/listings/${itemId}/bids`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${accessToken}`, //
-        },
-        body: JSON.stringify(requestBody),
-      })
-        .then((response) => {
-          if (response.ok) {
-            console.log("Bid placed successfully!");
-          } else {
-            console.log("Failed to place bid");
-          }
-        })
-        .catch((error) => {
-          console.error("Error occurred:", error);
-        });
-    } else {
-      console.log("You can't bid 0");
+    if (!bidAmount || bidAmount <= 0) {
+      alert("Please enter a valid bid amount!");
+      return;
     }
+
+    const bidData = {
+      bid: bidAmount,
+    };
+
+    fetch(`https://api.noroff.dev/api/v1/auction/listings/${itemId}/bids`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(bidData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Bid successfully placed!");
+          return response.json();
+        } else {
+          throw new Error("Bid failed");
+        }
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Failed to place bid. Please try again.");
+      });
   });
-});
+}
+
+addBidEventListener();
