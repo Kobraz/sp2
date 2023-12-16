@@ -1,4 +1,4 @@
-import { addBidEventListener } from "./placebid.mjs";
+import { addBidEventListener } from "../scripts/placeBid.mjs";
 
 function getParameterByName(name, url = window.location.href) {
   name = name.replace(/[\[\]]/g, "\\$&");
