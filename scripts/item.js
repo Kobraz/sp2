@@ -1,3 +1,5 @@
+import { addBidEventListener } from "./placebid.mjs";
+
 function getParameterByName(name, url = window.location.href) {
   name = name.replace(/[\[\]]/g, "\\$&");
   const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -44,6 +46,8 @@ function displayItem(item) {
          <p class="cardBids"><span class="textCont">Bids: </span>${item._count}</p>
          <label for="bidAmount">Enter bid: </label><input type="number" id="bidAmount" class="bidAmount" name="bidAmount" min="0" max="1000"><button id="placeBid" class="placeBid">Place bid</button>
       `;
+
+  addBidEventListener();
 }
 
 /* function addBidEventListener() {
