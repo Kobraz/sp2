@@ -11,7 +11,7 @@
     <script src="./scripts/dashboard.js" defer></script>
     <script src="./scripts/hamburger.js" defer></script>
     <!-- <script src="./scripts/itemAndBids2.js" defer></script> -->
-    <script src="./scripts/item.js" defer></script>
+    <script src="./scripts/item.js" defer type="module"></script>
     <!-- <script src="./scripts/loading.js"></script> -->
     <script src="./scripts/logoff.js"></script>
     <!-- <script src="./scripts/image-popup.js" defer></script> -->
@@ -28,7 +28,9 @@
           <div class="userDetails">
             <p class="userName" id="userName"></p>
             <p class="email" id="email"></p>
-            <p class="creds" id="creds">Credits: <span class="credits" id="credits"></span></p>
+            <p class="creds" id="creds">
+              Credits: <span class="credits" id="credits"></span>
+            </p>
           </div>
         </div>
         <div class="menu-dropdown">
@@ -37,10 +39,16 @@
           </label>
           <nav class="navbar">
             <ul class="nav-menu">
-              <li class="nav-item"><a href="./dashboard.html" class="nav-link">Dashboard</a></li>
+              <li class="nav-item">
+                <a href="./dashboard.html" class="nav-link">Dashboard</a>
+              </li>
               <li class="nav-item"><a href="./post.html" class="nav-link">Post</a></li>
-              <li class="nav-item"><a href="./profile.html" class="nav-link">Profile</a></li>
-              <li class="nav-item"><a href="#" class="nav-link" id="Logoff">Log off</a></li>
+              <li class="nav-item">
+                <a href="./profile.html" class="nav-link">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" id="Logoff">Log off</a>
+              </li>
             </ul>
             <div class="hamburger">
               <span class="bar"></span>
