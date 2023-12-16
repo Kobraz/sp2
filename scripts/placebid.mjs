@@ -1,4 +1,4 @@
-function addBidEventListener() {
+export function addBidEventListener() {
   const placeBidButton = document.querySelector(".placeBid");
   const bidAmountInput = document.querySelector(".bidAmount");
 
@@ -44,5 +44,3 @@ function addBidEventListener() {
       });
   });
 }
-
-addBidEventListener();

@@ -47,7 +47,6 @@ function displayItem(item) {
          <label for="bidAmount">Enter bid: </label><input type="number" id="bidAmount" class="bidAmount" name="bidAmount" min="0" max="1000"><button id="placeBid" class="placeBid">Place bid</button>
       `;
 
-  console.log("Item title: " + item.title);
   addBidEventListener();
 }
 
