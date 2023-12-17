@@ -18,6 +18,8 @@ This is my prototype by Figma: https://www.figma.com/file/TLYb9WXWRqMya2lNF5iewE
 
 I have tried to keep it simple and just focused on showing my desting on this prototype.
 
+I made this style-guide: https://www.figma.com/file/fURXgCQt40py9EY3hxrZUB/Untitled?type=design&node-id=0%3A1&mode=design&t=OnjkAYneoMzDBRGk-1
+
 ### Hosting
 
 My site is hosted by Netlify at this address: https://rfh-sp2auction-final.netlify.app/
