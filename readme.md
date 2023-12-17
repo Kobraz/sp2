@@ -1,3 +1,5 @@
+![Image of Auction Site - Dashboard]([http://url/to/img.png](https://d2a7aj9rvkkij5.cloudfront.net/c0fp8q%2Fpreview%2F54972051%2Fmain_large.png?response-content-disposition=inline%3Bfilename%3D%22main_large.png%22%3B&response-content-type=image%2Fpng&Expires=1702845251&Signature=MLgD2VDCdF9EQkhFNIAQnDlOgFPoOlNA8sznTAbq3Wr6RESR~zX5uq~bX5lvKPu3PAcQhj8BEFC-Vy1HWoamedt8wcouhKKjFTorRoJN9v8EZPwwW8PwniFp-s8oXWXRNUwZA0AixTM8sUFO0xI-KA5J7ahai8wJS8IKxVHceV6y4XjUiMqoAK8ivEGzxf~2lUtnOPr2Z1vtT0IIGTqdXOJ-FOAuixxGv-boYLWtpfoi5dmEfQTvET1yZZkfZVl8zrfjXi3sMu4GtWWBw7jgaELWvc39cVqGGMzpa9~lzElrJ5IUGJtcW4rW7okrMosYGcRlnXTpKORzWQ4lb~HnUA__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ))
+
 # Semester Project 2: Auction site
 
 ## About my project
@@ -18,7 +20,9 @@ I have tried to keep it simple and just focused on showing my desting on this pr
 
 My site is hosted by Netlify at this address: https://rfh-sp2auction-final.netlify.app/
 
+### Challenges in the project
 
+Ive had some challenges during the project. That's why I do now deliver the project without a working way to place bids or to show bids made on the items. I have asked for help on discord and got some help, from 
 
 
 ## Setting Up and Running the JavaScript API Project Locally:
