@@ -86,7 +86,7 @@ function populateTable(data) {
   console.log("Tags: " + data[0].tags);
   console.log("Created: " + data[0].created);
   console.log("Updated: " + data[0].updated);
-  console.log("Bids: " + data[0]._bids);
+  console.log("Bids: " + data[0].bids);
   console.log("-------------------------------");
   console.log("Id: " + data[1].id);
   console.log("Title: " + data[1].title);
@@ -95,7 +95,7 @@ function populateTable(data) {
   console.log("Tags: " + data[1].tags);
   console.log("Created: " + data[1].created);
   console.log("Updated: " + data[1].updated);
-  console.log("Bids: " + data[1]._bids);
+  console.log("Bids: " + data[1].bids);
   console.log("-------------------------------");
   console.log("Id: " + data[2].id);
   console.log("Title: " + data[2].title);
@@ -104,7 +104,7 @@ function populateTable(data) {
   console.log("Tags: " + data[2].tags);
   console.log("Created: " + data[2].created);
   console.log("Updated: " + data[2].updated);
-  console.log("Bids: " + data[2]._bids);
+  console.log("Bids: " + data[2].bids);
   console.log("-------------------------------");
   console.log("Id: " + data[3].id);
   console.log("Title: " + data[3].title);
@@ -113,7 +113,7 @@ function populateTable(data) {
   console.log("Tags: " + data[3].tags);
   console.log("Created: " + data[3].created);
   console.log("Updated: " + data[3].updated);
-  console.log("Bids: " + data[3]._bids);
+  console.log("Bids: " + data[3].bids);
   console.log("-------------------------------");
   console.log("Id: " + data[4].id);
   console.log("Title: " + data[4].title);
@@ -122,7 +122,7 @@ function populateTable(data) {
   console.log("Tags: " + data[4].tags);
   console.log("Created: " + data[4].created);
   console.log("Updated: " + data[4].updated);
-  console.log("Bids: " + data[4]._bids);
+  console.log("Bids: " + data[4].bids);
   console.log("-------------------------------");
   console.log("Id: " + data[5].id);
   console.log("Title: " + data[5].title);
@@ -131,7 +131,7 @@ function populateTable(data) {
   console.log("Tags: " + data[5].tags);
   console.log("Created: " + data[5].created);
   console.log("Updated: " + data[5].updated);
-  console.log("Bids: " + data[5]._bids);
+  console.log("Bids: " + data[5].bids);
   console.log("-------------------------------");
   console.log("Id: " + data[6].id);
   console.log("Title: " + data[6].title);
@@ -140,7 +140,7 @@ function populateTable(data) {
   console.log("Tags: " + data[6].tags);
   console.log("Created: " + data[6].created);
   console.log("Updated: " + data[6].updated);
-  console.log("Bids: " + data[6]._bids);
+  console.log("Bids: " + data[6].bids);
   console.log("-------------------------------");
 
   console.log(
