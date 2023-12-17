@@ -24,7 +24,9 @@ My site is hosted by Netlify at this address: https://rfh-sp2auction-final.netli
 
 ### Challenges in the project
 
-Ive had some challenges during the project. That's why I do now deliver the project without a working way to place bids or to show bids made on the items. I have asked for help on discord and got some help, from 
+Ive had some challenges during the project. That's why I do now deliver the project without a working way to place bids or to show bids made on the items. I have asked for help on discord and got some good help, from @chalund (Charlotte Lund) and @spookyrumble on Discord.
+
+I did not make to finish the project 100% because of the challenges Ive got.
 
 
 ## Setting Up and Running the JavaScript API Project Locally:
