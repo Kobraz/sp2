@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/post.css" />
+    <link rel="stylesheet" href="./styles/loading.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <title>Auction Site | Profile Page</title>
+    <script src="./scripts/dashboard.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/logoff.js"></script>
+    <script src="./scripts/addImage.js" defer></script>
+    <script src="./scripts/post2.js" defer></script>
+    <script src="https://kit.fontawesome.com/3834125a3f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-section">
+        <h1>Auction Site</h1>
+      </div>
+      <div class="bottom-section">
+        <div class="userInfo">
+          <img class="avatar" id="avatar" alt="Avatar" />
+          <div class="userDetails">
+            <p class="userName" id="userName"></p>
+            <p class="email" id="email"></p>
+            <p class="creds" id="creds">Credits: <span class="credits" id="credits"></span></p>
+          </div>
+        </div>
+        <div class="menu-dropdown">
+          <label for="menu-dropdown-toggle" class="menu-dropdown-toggle-label"> </label>
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="./dashboard.html" class="nav-link">Dashboard</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Post</a></li>
+              <li class="nav-item"><a href="./profile.html" class="nav-link">Profile</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" id="Logoff">Log off</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="form-box">
+          <h1 id="title">Add new post</h1>
+          <form id="form">
+            <label class="label" for="postTitle">Title</label>
+            <input id="postTitle" name="title" type="text" placeholder="Title" />
+
+            <label class="label" for="postDescription">Description</label>
+            <input id="postDescription" name="description" type="text" placeholder="Description" />
+
+            <label class="label" for="postTags">Tags</label>
+            <input id="postTags" name="tags" type="text" placeholder="Tags" />
+
+            <div id="imageInputs">
+              <label class="label" for="postImage">Image</label>
+              <input class="postImage" name="media[]" type="text" placeholder="Image URL" />
+            </div>
+
+            <button id="addImageButton" class="addImageButton" type="button">Add Image</button>
+
+            <label class="label" for="postDeadline">Deadline date</label>
+            <input id="postDeadline" name="endsAt" type="date" />
+
+            <button id="loginButton" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2023 Auction Site. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

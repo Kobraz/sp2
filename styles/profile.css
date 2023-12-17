@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardHolder {
+  max-width: 90%;
+}
+
+.card {
+  background-color: var(--primary-grayColor);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: black;
+  padding: 20px;
+  max-width: 100%;
+  margin: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  /* position: absolute; */
+  /* top: 100px; */
+  margin-top: 0px;
+  margin-bottom: 50px;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 20px;
+  display: block;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #461919;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: "";
+  width: 40px;
+  height: 6px;
+  border-radius: 10px;
+  background: #461919;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+form p {
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a {
+  text-decoration: none;
+  color: #461919;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #461919;
+  position: relative;
+}
+
+button {
+  font-size: 18px;
+  flex-basis: 48%;
+  background: #461919;
+  color: #fff;
+  height: 35px;
+  width: 80px;
+  border-radius: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #953232;
+}
+
+.addImageButton {
+  margin-bottom: 20px;
+  font-size: 14px;
+  height: 28px;
+  width: 100px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  text-align: center;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+  margin-bottom: 15px;
+  background: #eaeaea;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: rgb(130, 130, 130);
+}
