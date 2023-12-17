@@ -1,6 +1,21 @@
 # Semester Project 2: Auction site
 
-## Setting Up and Running the JavaScript API Project Locally:
+## About my project
+
+### Project planning and management using Trello
+
+I used Trello to plan and manage my project. You can see my Trello-board here: https://trello.com/b/gghTnfyM/semesterprosjekt2-auction-site.
+
+Unfortunately my free version of Trello did not support the timeline-view (calendar-view), but you can still see my dates for each part of the project if you use the link above and view my cards.
+
+### Prototype/Design using Figma
+
+This is my prototype by Figma: https://www.figma.com/file/TLYb9WXWRqMya2lNF5iewE/Untitled?type=design&node-id=0%3A1&mode=design&t=mpomWsJadl06Di48-1
+
+
+
+
+## Setting Up and Running the JavaScript API Project Locally
 
 ### Prerequisites:
 #### 1. Node.js and npm: Ensure that Node.js (which includes npm) is installed on your machine. You can download it from the official website: Node.js.
