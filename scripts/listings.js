@@ -86,6 +86,7 @@ function populateTable(data) {
   console.log("Tags: " + data[0].tags);
   console.log("Created: " + data[0].created);
   console.log("Updated: " + data[0].updated);
+  console.log("Updated: " + data[0].bids);
   console.log(
     "---------------------------------------------------------------------------------------------------------------------------------------"
   );
