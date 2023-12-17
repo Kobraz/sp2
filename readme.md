@@ -10,6 +10,8 @@ I used Trello to plan and manage my project. You can see my Trello-board here: h
 
 Unfortunately my free version of Trello did not support the timeline-view (calendar-view), but you can still see my dates for each part of the project if you use the link above and view my cards.
 
+
+
 ### Prototype/Design using Figma
 
 This is my prototype by Figma: https://www.figma.com/file/TLYb9WXWRqMya2lNF5iewE/Untitled?type=design&node-id=0%3A1&mode=design&t=mpomWsJadl06Di48-1
